@@ -17,3 +17,9 @@ This master project aims at enriching existing metagenomics data from field expe
 Microdrygrape Project @ FCUL
 
 Bayer Digital Campus Challenge 2023 (Data-Driven Farming)
+
+
+### Important References:
+Sousa, D., Lamurias, A., and Couto, F. M. (2019). A silver standard corpus of human phenotype-gene relations. NAACL HLT 2019 - 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies - Proceedings of the Conference, 1:1487–1492 (https://aclanthology.org/N19-1152/)
+
+Sousa, D. and Couto, F. M. (2023). K-RET: knowledgeable biomedical relation extraction system. Bioinformatics, 39 (https://academic.oup.com/bioinformatics/article/39/4/btad174/7108769)
