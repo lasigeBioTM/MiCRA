@@ -1,0 +1,4 @@
+drought
+salt
+cold
+heat
