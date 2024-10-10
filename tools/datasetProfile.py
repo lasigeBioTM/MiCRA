@@ -135,8 +135,8 @@ def get_combinations(reference_type, dataframe, destination_path):
 
 
 def get_combinations_by_stress(reference_type, dataframe, destination_path, stress):
-    """Creates a .txt file per stress type with most to least common combinations of microorganisms and plants in dataset,
-    with respective references
+    """Called by get_combinations() function. Creates a .txt file per stress type with most to least common combinations
+    of microorganisms and plants in dataset, with respective references
 
     :param reference_type (str): 'pmcid' or 'doi' (type of IDs used in dataset)
     :param dataframe (df): Pandas DataFrame with 6 columns: article ID, microorganism, stress, plant, text, and relation
