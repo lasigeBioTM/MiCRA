@@ -57,14 +57,22 @@ def start_process_owl_file(ontology, lines, labels_file, links_file, synonyms_fi
             ids_to_process.append(cls.iri)
 
             # Process and write synonyms
-            for synonyms in cls.hasExactSynonym:
-                labels_file.write(f"{synonyms}\n")
-                synonyms_file.write(f"{synonyms}\n")
-                links_file.write(f"{synonyms}|{cls.iri}\n")
-            for synonyms in cls.hasRelatedSynonym:
-                labels_file.write(f"{synonyms}\n")
-                synonyms_file.write(f"{synonyms}\n")
-                links_file.write(f"{synonyms}|{cls.iri}\n")
+            for synonym in cls.hasExactSynonym:
+                if (any(char.isdigit() for char in synonym) and ' ' not in synonym):    # Check if synonym is a single word with numbers (ex: SA1)
+                    print(f'{synonym} not included')
+                    break
+                else:
+                    labels_file.write(f"{synonym}\n")
+                    synonyms_file.write(f"{synonym}\n")
+                    links_file.write(f"{synonym}|{cls.iri}\n")
+            for synonym in cls.hasRelatedSynonym:
+                if (any(char.isdigit() for char in synonym) and ' ' not in synonym):    # Check if synonym is a single word with numbers (ex: SA1)
+                    print(f'{synonym} not included')
+                    break
+                else:
+                    labels_file.write(f"{synonym}\n")
+                    synonyms_file.write(f"{synonym}\n")
+                    links_file.write(f"{synonym}|{cls.iri}\n")
         
             synonyms_file.write("-\n")
         
@@ -114,15 +122,23 @@ def process_owl_file(ontology, lines, labels_file, links_file, synonyms_file):
                 ids_to_process.append(sub_cls.iri)
 
                 # Process and write synonyms
-                for synonyms in sub_cls.hasExactSynonym:
-                    labels_file.write(f"{synonyms}\n")
-                    synonyms_file.write(f"{synonyms}\n")
-                    links_file.write(f"{synonyms}|{sub_cls.iri}\n")
-                for synonyms in sub_cls.hasRelatedSynonym:
-                    labels_file.write(f"{synonyms}\n")
-                    synonyms_file.write(f"{synonyms}\n")
-                    links_file.write(f"{synonyms}|{sub_cls.iri}\n")
-                
+                for synonym in sub_cls.hasExactSynonym:
+                    if (any(char.isdigit() for char in synonym) and ' ' not in synonym):    # Check if synonym is a single word with numbers (ex: SA1)
+                        print(f'{synonym} not included')
+                        break
+                    else:
+                        labels_file.write(f"{synonym}\n")
+                        synonyms_file.write(f"{synonym}\n")
+                        links_file.write(f"{synonym}|{sub_cls.iri}\n")
+                for synonym in sub_cls.hasRelatedSynonym:
+                    if (any(char.isdigit() for char in synonym) and ' ' not in synonym):    # Check if synonym is a single word with numbers (ex: SA1)
+                        print(f'{synonym} not included')
+                        break
+                    else:
+                        labels_file.write(f"{synonym}\n")
+                        synonyms_file.write(f"{synonym}\n")
+                        links_file.write(f"{synonym}|{sub_cls.iri}\n")
+                    
                 synonyms_file.write("-\n")
     
 
@@ -168,13 +184,6 @@ def edit_file(original_file, new_file):
                         if no_prefix not in lines_seen:
                             lines_seen.add(no_prefix)
                             output_file.write(f'{no_prefix}')
-
-                    # Include group names without the "group" suffix
-                    if re.search('group$', line, re.IGNORECASE):
-                        no_suffix = line.replace(' group', '')
-                        if no_suffix not in lines_seen:
-                            lines_seen.add(no_suffix)
-                            output_file.write(f'{no_suffix}')
 
                     # Include names without authors &/or entry year
                     if re.search(r"\(", line):
