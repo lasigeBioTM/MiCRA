@@ -15,7 +15,7 @@ def parse_synonyms_file(file_path):
     :return dict: dictionary mapping synonyms to the respective main term
     """
 
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding = 'utf-8') as file:
         stress_mapping = {}
         main_term = None
         synonyms = []
@@ -51,23 +51,30 @@ def get_pmcids_list(file_path):
     """
 
     # Get all terms from MER stress lexicon
-    stress_synonyms_mapping = parse_synonyms_file('./bin/MER/data/stress_synonyms.txt')                
+    stress_synonyms_path = os.path.join('bin','MER','data','stress_synonyms.txt')
+    stress_synonyms_mapping = parse_synonyms_file(stress_synonyms_path)                
 
     # Define keywords for querying    # ----------------------------------------------------------- CHANGEABLE
     ### ATTENTION:'AND' and 'OR' statements MUST be written inside the same string
-    #### Ex: "plant stress AND tolerance" instead of "plant stress" AND "tolerance"
-    query_keywords = ["microbe OR microorganism", "plant stress", "tolerance"]
+    query_keywords = [
+    "(((microbe[All Fields]) OR (microorganism[All Fields]) NOT (gut microbiome[All Fields])))",
+    "((plant stress[All Fields]) OR (plant abiotic stress[All Fields]))",
+    "(toleran*[All Fields] OR improv*[All Fields] OR mitigat*[All Fields] NOT (drug tolerance[All Fields]))"
+    ]
 
-    print(f'QUERY KEYWORDS: [stress type] + {(" + ".join(query_keywords)).strip('"')}\n-----------------------------------------')
+
+
+
+    print(f'QUERY KEYWORDS: [stress type] + {(" + ".join(query_keywords))}\n-----------------------------------------')
     
     # PubMed Central query for articles regarding microbe-mediated plant tolerance to each stress on our stress list
     for key, value in stress_synonyms_mapping.items():
         
-        filename = f'tempfile_pmcids.xml'
+        filename = 'tempfile_pmcids.xml'
         stress_terms_ids = []
         
         # Replace blank spaces with '%20' for HTML reading
-        for i in range(0, len(query_keywords) -1):
+        for i in range(0, len(query_keywords)):
             if ' ' in query_keywords[i]:
                 query_keywords[i] = query_keywords[i].replace(' ', '%20')
 
@@ -78,10 +85,11 @@ def get_pmcids_list(file_path):
         for stress_type in value:
             if ' ' in stress_type:
                 stress_type = stress_type.replace(' ', '%20')
-        
-            
-            # Query format: {stress_type} plant microbe tolerance AND English[Language]
-            os.system('curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=' + f'{stress_type}+{query_keywords[0]}+AND+{query_keywords[1]}+AND+{query_keywords[2]}+AND+English[Language]&reldate=1825&datetype=edat&retmax=1000&retmode=xml" >> {filename}')
+
+            keywords = "+AND+".join(query_keywords)
+
+            # Query format: {stress_type} plant microbe tolerance within the last 8 years
+            os.system('curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=' + f'{stress_type}+AND+{keywords}&reldate=2922&datetype=edat&sort=relevance&retmax=150&retmode=xml" >> {filename}')
 
             exit_file = open(filename, 'r', encoding = 'utf-8')
             list_ids = exit_file.read().split('<IdList>')[-1].split('</IdList>')[0].split('\n')[1:-1]
@@ -90,9 +98,10 @@ def get_pmcids_list(file_path):
             
         unique_ids = set(stress_terms_ids)
 
-        # 
-        with open(f'{file_path}/PMCids_{key}.txt', 'w') as f:
-            f.write(f'{"\n".join(unique_ids)}')
+        # Get unique PMCIDs for each main stress term
+        unique_ids_path = os.path.join(file_path,f'PMCids_{key}.txt')
+        with open(unique_ids_path, 'w', encoding = 'utf-8') as f:
+            f.write("\n".join(unique_ids))
 
         f.close()
         exit_file.close()
@@ -116,13 +125,14 @@ def get_pmcids_list(file_path):
 def main():
     """Creates a directory with a .txt file of PMCIDs for each stress term in MER stress lexicon
 
-    :return side effect: directory with a .txt file of PMCIDs for each stress term in MER stress lexicon
+    :return: directory with a .txt file of PMCIDs for each stress term in MER stress lexicon
     """
 
     start_time = time.time() #-------------------------------------------------------------------------------- LOG: TIME
     os.system('mkdir -p corpus_data/pmcid_files || true') # dir for PMCID text files
     print("-----------------------------------------\nRETRIEVING PMC IDs FOR EACH STRESS TYPE")
-    get_pmcids_list("./corpus_data/pmcid_files")
+    destination_path = os.path.join('corpus_data','pmcid_files')
+    get_pmcids_list(destination_path)
     print(f'-----------------------------------------\n')
     print(f'RUNTIME: {time.time() - start_time:.1f} seconds') #----------------------------------------------- LOG: TIME
 
