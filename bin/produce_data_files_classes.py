@@ -14,7 +14,7 @@ def read_classes_into_array(file_path):
     """
 
     lines = []
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding='utf8') as file:
         lines = [line.strip().split(" | ")[1] for line in file.readlines()]  # Strip newline characters and names
 
     return lines
@@ -58,16 +58,14 @@ def start_process_owl_file(ontology, lines, labels_file, links_file, synonyms_fi
 
             # Process and write synonyms
             for synonym in cls.hasExactSynonym:
-                if (any(char.isdigit() for char in synonym) and ' ' not in synonym):    # Check if synonym is a single word with numbers (ex: SA1)
-                    print(f'{synonym} not included')
+                if (any(char.isdigit() for char in synonym) and ' ' not in synonym and len(synonym)<5):    # Check if synonym is a single word with numbers (ex: SA1)
                     break
                 else:
                     labels_file.write(f"{synonym}\n")
                     synonyms_file.write(f"{synonym}\n")
                     links_file.write(f"{synonym}|{cls.iri}\n")
             for synonym in cls.hasRelatedSynonym:
-                if (any(char.isdigit() for char in synonym) and ' ' not in synonym):    # Check if synonym is a single word with numbers (ex: SA1)
-                    print(f'{synonym} not included')
+                if (any(char.isdigit() for char in synonym) and ' ' not in synonym and len(synonym)<5):    # Check if synonym is a single word with numbers (ex: SA1)
                     break
                 else:
                     labels_file.write(f"{synonym}\n")
@@ -123,16 +121,14 @@ def process_owl_file(ontology, lines, labels_file, links_file, synonyms_file):
 
                 # Process and write synonyms
                 for synonym in sub_cls.hasExactSynonym:
-                    if (any(char.isdigit() for char in synonym) and ' ' not in synonym):    # Check if synonym is a single word with numbers (ex: SA1)
-                        print(f'{synonym} not included')
+                    if (any(char.isdigit() for char in synonym) and ' ' not in synonym and len(synonym)<5):    # Check if synonym is a single word with numbers (ex: SA1)
                         break
                     else:
                         labels_file.write(f"{synonym}\n")
                         synonyms_file.write(f"{synonym}\n")
                         links_file.write(f"{synonym}|{sub_cls.iri}\n")
                 for synonym in sub_cls.hasRelatedSynonym:
-                    if (any(char.isdigit() for char in synonym) and ' ' not in synonym):    # Check if synonym is a single word with numbers (ex: SA1)
-                        print(f'{synonym} not included')
+                    if (any(char.isdigit() for char in synonym) and ' ' not in synonym and len(synonym)<5):    # Check if synonym is a single word with numbers (ex: SA1)
                         break
                     else:
                         labels_file.write(f"{synonym}\n")
@@ -159,10 +155,10 @@ def edit_file(original_file, new_file):
 
     lines_seen = set()  # Holds lines already seen
 
-    with open(original_file, 'r') as input_file:
+    with open(original_file, 'r', encoding='utf8') as input_file:
         lines = input_file.readlines()
 
-        with open(new_file, 'w') as output_file:
+        with open(new_file, 'w', encoding='utf8') as output_file:
             for line in lines:
 
                 # Remove unwanted characters
@@ -210,7 +206,19 @@ def edit_file(original_file, new_file):
                         re.search('^virus$', line, re.IGNORECASE) or \
                         re.search('^subgroup A$', line, re.IGNORECASE) or \
                         re.search('^subgroup B$', line, re.IGNORECASE) or \
-                        re.search('^subgroup C$', line, re.IGNORECASE):
+                        re.search('^subgroup C$', line, re.IGNORECASE) or \
+                        re.search('^ammonia$', line, re.IGNORECASE) or \
+                        re.search('^codon$', line, re.IGNORECASE) or \
+                        re.search('^cotyledon$', line, re.IGNORECASE) or \
+                        re.search('^glycine$', line, re.IGNORECASE) or \
+                        re.search('^endophyticum bacterium$', line, re.IGNORECASE) or \
+                        re.search('^vascular plants$', line, re.IGNORECASE) or \
+                        re.search('^agent', line, re.IGNORECASE) or \
+                        re.search('unclassified', line, re.IGNORECASE) or \
+                        re.search('unidentified', line, re.IGNORECASE) or \
+                        re.search('environmental', line, re.IGNORECASE) or \
+                        re.search('uncultured', line, re.IGNORECASE) or \
+                        re.search('unknown', line, re.IGNORECASE):
                         continue
 
                     # Add line to seen list and write it to file
@@ -275,9 +283,7 @@ def replace_text(file_path, replacement_list):
     :return side effect: applies changes to given .txt file
     """
 
-    # Open the file in read and write mode 
-    with open(file_path, 'r+') as f: 
-        # Read the file content
+    with open(file_path, 'r+', encoding='utf-8') as f: 
         file_content = f.read()
         
         # Perform all replacements
@@ -303,21 +309,23 @@ def final_editing_microorganisms():
     """
 
     # Handling labels file: only need to add the extra terms (order is irrelevant)
-    with open(output_labels_file, 'a') as labels_file:
-        labels_file.write(f"Bacillus megaterium\nGlomus etunicatum\nTurnip mosaic potyvirus\nSaccharibacteria")
+    with open(output_labels_file, 'a', encoding='utf8') as labels_file:
+        labels_file.write(f"Bacillus megaterium\nGlomus etunicatum\nTurnip mosaic potyvirus\nSaccharibacteria\nPseudomonas stutzeri")
 
     # Handling synonyms file: add extra terms near synonyms (order is IMPORTANT)
     replace_text(output_synonyms_file,[
         ("Priestia megaterium", f"Priestia megaterium\nBacillus megaterium"),
+        ("Stutzerimonas stutzeri",f"Stutzerimonas stutzeri\nPseudomonas stutzeri"),
         ("Entrophospora etunicata", f"Entrophospora etunicata\nGlomus etunicatum"),
         ("Turnip mosaic potyvirus TuMV", f"Turnip mosaic potyvirus TuMV\nTurnip mosaic potyvirus"),
         ("Candidatus Saccharibacteria", f"Candidatus Saccharibacteria\nSaccharibacteria"),
         ])
 
     # Handling links file: add extra terms with corresponding links from linked synonym (order is irrelevant)
-    with open(output_links_file, 'a') as links_file:
+    with open(output_links_file, 'a', encoding='utf8') as links_file:
         links_file.write(
         "Bacillus megaterium|http://purl.obolibrary.org/obo/NCBITaxon_1404"
+        "Pseudomonas stutzeri|http://purl.obolibrary.org/obo/NCBITaxon_316"
         "Glomus etunicatum|http://purl.obolibrary.org/obo/NCBITaxon_937382"
         "Turnip mosaic potyvirus|http://purl.obolibrary.org/obo/NCBITaxon_12230"
         "Saccharibacteria|http://purl.obolibrary.org/obo/NCBITaxon_95818"
@@ -332,7 +340,7 @@ def final_editing_plants():
     """
 
     # Handling labels file: only need to add the extra terms (order is irrelevant)
-    with open(output_labels_file, 'a') as labels_file:
+    with open(output_labels_file, 'a', encoding='utf8') as labels_file:
         labels_file.write(f"pepper\n"
                           "bell pepper\n"
                           "red peppers\n"
@@ -365,7 +373,6 @@ def final_editing_plants():
         ("Helianthus annuus", f"Helianthus annuus\nsunflower"),
         ("Arachis hypogaea",f"Arachis hypogaea\ngroundnut\ngroundnuts"),
         ("Brassica napus", f"Brassica napus\nrapeseed"),
-        ("Poaceae", f"Poaceae\nmillet"),
         ("Vigna radiata", f"Vigna radiata\nmung bean\nmoong\nmungbean"),
         ("Sorghum",f"Sorghum\ngreat millet"),
         ("Vitis vinifera", f"Vitis vinifera\ngrapevine\ngrapes\ngrape"),
@@ -379,7 +386,7 @@ def final_editing_plants():
         ])
 
     # Handling links file: add extra terms with corresponding links from linked synonym (order is irrelevant)
-    with open(output_links_file, 'a') as links_file:
+    with open(output_links_file, 'a', encoding='utf8') as links_file:
         links_file.write(
         "pepper|http://purl.obolibrary.org/obo/NCBITaxon_4072\n"
         "bell pepper|http://purl.obolibrary.org/obo/NCBITaxon_4072\n"
@@ -415,16 +422,20 @@ def split_labels_into_files(labels):
     :return side effect: creates 4 files, each with different length labels
     """
 
-    # Open the output files
-    with open(f'./bin/MER/data/{filename}_word1.txt', 'w') as single_file, \
-         open(f'./bin/MER/data/{filename}_word2.txt', 'w') as two_word_file, \
-         open(f'./bin/MER/data/{filename}_words.txt', 'w') as multi_word_file, \
-         open(f'./bin/MER/data/{filename}_words2.txt', 'w') as unique_two_word_file:
+    word1_file = os.path.join('bin','MER','data',f'{filename}_word1.txt')
+    word2_file = os.path.join('bin','MER','data',f'{filename}_word2.txt')
+    words_file = os.path.join('bin','MER','data',f'{filename}_words.txt')
+    words2_file = os.path.join('bin','MER','data',f'{filename}_words2.txt')
+
+    with open(word1_file, 'w', encoding='utf8') as single_file, \
+         open(word2_file, 'w', encoding='utf8') as two_word_file, \
+         open(words_file, 'w', encoding='utf8') as multi_word_file, \
+         open(words2_file, 'w', encoding='utf8') as unique_two_word_file:
 
         two_word_seen = set()
 
         # Process each label from the input file
-        with open(labels, 'r') as file:
+        with open(labels, 'r', encoding='utf8') as file:
             for line in file:
                 words = line.strip().split()
 
@@ -456,9 +467,9 @@ def lowercase_links_file(links_file):
     """
 
     links_name = links_file.replace('_temp2links.txt','')
-    with open(links_file,'r') as input_file:
+    with open(links_file,'r', encoding='utf8') as input_file:
         lines = input_file.readlines()
-        with open (f'{links_name}_links.tsv', 'w') as output_file:
+        with open (f'{links_name}_links.tsv', 'w', encoding='utf8') as output_file:
             for line in lines:
                 label = line.split('|')[0].lower()
                 id = line.split('|')[1]
@@ -484,23 +495,23 @@ for data_type in data_sources:
 
     print(f'\n** {data_type.title()} lexicon data **\n')
 
-    classes_path = f"./bin/classes_{data_type}.txt"     ### CHANGEABLE: Classes files template name ###
+    classes_path = os.path.join('.','bin',f'classes_{data_type}.txt')     ### CHANGEABLE: Classes files template name ###
     lines = read_classes_into_array(classes_path)  
 
     # Paths to files
-    ontology_path = "./bin/ncbitaxon.owl"               ### CHANGEABLE: Ontology file you're using ###
+    ontology_path = os.path.join('.','bin','ncbitaxon.owl')               ### CHANGEABLE: Ontology file you're using ###
     filename = classes_path.replace("./bin/classes_","").replace(".txt","")
-    file_labels_path = f"./bin/MER/data/{filename}_templabels.txt"
-    file_links_path = f"./bin/MER/data/{filename}_templinks.txt"
-    file_synonyms_path = f"./bin/MER/data/{filename}_tempsynonyms.txt"
+    file_labels_path = os.path.join('.','bin','MER','data',f'{filename}_templabels.txt')
+    file_links_path = os.path.join('.','bin','MER','data',f'{filename}_templinks.txt')
+    file_synonyms_path = os.path.join('.','bin','MER','data',f'{filename}_tempsynonyms.txt')
 
     # Load the ontology
     ontology = get_ontology(ontology_path).load()
 
     # Open output files for writing
-    labels_file = open(file_labels_path, 'w')
-    links_file = open(file_links_path, 'w')
-    synonyms_file = open(file_synonyms_path, 'w')
+    labels_file = open(file_labels_path, 'w', encoding='utf8')
+    links_file = open(file_links_path, 'w', encoding='utf8')
+    synonyms_file = open(file_synonyms_path, 'w', encoding='utf8')
 
     # Process the ontology file and remove duplicates from resulting synonyms file
     start_process_owl_file(ontology, lines, labels_file, links_file, synonyms_file)
