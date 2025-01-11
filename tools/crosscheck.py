@@ -1,4 +1,5 @@
 import re
+import os
 
 
 #########################################################
@@ -6,7 +7,7 @@ import re
 #########################################################
 
 
-with open('datasetTOTAL.txt', 'r') as dataset:
+with open('checked_dataset/Checked_DS.txt', 'r', encoding='utf-8') as dataset:
     lines = dataset.readlines()
 
 D_microorganisms = set()
@@ -20,10 +21,12 @@ for line in lines:
     D_plants.add(plant)                     # Plants found in dataset
 
 
-with open('./bin/MER/data/microorganisms.txt', 'r') as microorganisms_classes:
+MO_classes_path = os.path.join('bin','MER','data','microorganisms.txt')
+with open(MO_classes_path, 'r', encoding='utf-8') as microorganisms_classes:
     names_MOs = set(line.strip().lower() for line in microorganisms_classes)    # Microorganisms found in extracted classes labels file
 
-with open('./bin/MER/data/plants.txt', 'r') as plants_classes:
+PL_classes_path = os.path.join('bin','MER','data','plants.txt')
+with open(PL_classes_path, 'r', encoding='utf-8') as plants_classes:
     names_PLs = set(line.strip().lower() for line in plants_classes)            # Plants found in extracted classes labels file
 
 
@@ -35,8 +38,7 @@ MOs_combs = set()
 for microorganism in D_microorganisms:
     if microorganism.lower() in names_MOs:
         countMOs +=1
-    elif re.search(r"\+", microorganism):       # Check combinations in dataset (ex: Bacillus subtilis + Mesorhizobium ciceri)
-        MOs_combs.add(microorganism)
+
     else:
         MOs_notfound.add(microorganism)
 
@@ -50,8 +52,7 @@ PLs_combs = set()
 for plant in D_plants:
     if plant.lower() in names_PLs:
         countPLs +=1
-    elif re.search(r"\+", plant):       # Check combinations in dataset (uncommon in plants, but just in case)
-        PLs_combs.add(plant)
+
     else:
         PLs_notfound.add(plant)
 
@@ -74,11 +75,6 @@ if MOs_notfound == set():
 else:
     print('\n'.join(MOs_notfound))
 
-print(f'\nMicroorganism combinations in dataset:')
-if MOs_combs == set():
-    print('None')
-else:
-    print('\n'.join(MOs_combs))
 
 print(f'\nPlants not found:')
 if PLs_notfound == set():
@@ -86,10 +82,5 @@ if PLs_notfound == set():
 else:
     print('\n'.join(PLs_notfound))
 
-print(f'\nPlants combinations in dataset:')
-if PLs_combs == set():
-    print('None')
-else:
-    print('\n'.join(PLs_combs))
 
 print('\n----------------------------')

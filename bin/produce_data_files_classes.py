@@ -58,14 +58,14 @@ def start_process_owl_file(ontology, lines, labels_file, links_file, synonyms_fi
 
             # Process and write synonyms
             for synonym in cls.hasExactSynonym:
-                if (any(char.isdigit() for char in synonym) and ' ' not in synonym and len(synonym)<5):    # Check if synonym is a single word with numbers (ex: SA1)
+                if (any(char.isdigit() for char in synonym) and ' ' not in synonym and len(synonym)<5 or synonym == ''):    # Check if synonym is a single word with numbers (ex: SA1) or doesn't exist
                     break
                 else:
                     labels_file.write(f"{synonym}\n")
                     synonyms_file.write(f"{synonym}\n")
                     links_file.write(f"{synonym}|{cls.iri}\n")
             for synonym in cls.hasRelatedSynonym:
-                if (any(char.isdigit() for char in synonym) and ' ' not in synonym and len(synonym)<5):    # Check if synonym is a single word with numbers (ex: SA1)
+                if (any(char.isdigit() for char in synonym) and ' ' not in synonym and len(synonym)<5 or synonym == ''):    # Check if synonym is a single word with numbers (ex: SA1) or doesn't exist
                     break
                 else:
                     labels_file.write(f"{synonym}\n")
@@ -100,18 +100,18 @@ def process_owl_file(ontology, lines, labels_file, links_file, synonyms_file):
         sub_ontology = ontology.search(subclass_of = cls)
         if len(sub_ontology) > 0:
             for sub_cls in sub_ontology:
-                if sub_cls.iri == id :
+                if sub_cls.iri == id:
                     continue
                 
-                # Check if the class has certain mappings (e.g., hasAlternativeId)
+                # Check if the class has certain mappings (e.g., hasDbXref)
                 has_mappings = False
-                if hasattr(sub_cls, "oboInOwl_hasAlternativeId"):
+                if hasattr(sub_cls, "oboInOwl_hasDbXref"):
                     has_mappings = True
                     continue
 
                 # If no mappings were found, add to no_mappings
                 if not has_mappings:
-                    no_mappings.add(str(cls))
+                    no_mappings.add(str(sub_cls).replace('obo.', ''))
 
                 # Write subclass label and IRI to the output files
                 labels_file.write(f"{strip_label(sub_cls.label)}\n")
@@ -121,14 +121,14 @@ def process_owl_file(ontology, lines, labels_file, links_file, synonyms_file):
 
                 # Process and write synonyms
                 for synonym in sub_cls.hasExactSynonym:
-                    if (any(char.isdigit() for char in synonym) and ' ' not in synonym and len(synonym)<5):    # Check if synonym is a single word with numbers (ex: SA1)
+                    if (any(char.isdigit() for char in synonym) and ' ' not in synonym and len(synonym)<5) or synonym == '':    # Check if synonym is a single word with numbers (ex: SA1) or doesn't exist
                         break
                     else:
                         labels_file.write(f"{synonym}\n")
                         synonyms_file.write(f"{synonym}\n")
                         links_file.write(f"{synonym}|{sub_cls.iri}\n")
                 for synonym in sub_cls.hasRelatedSynonym:
-                    if (any(char.isdigit() for char in synonym) and ' ' not in synonym and len(synonym)<5):    # Check if synonym is a single word with numbers (ex: SA1)
+                    if (any(char.isdigit() for char in synonym) and ' ' not in synonym and len(synonym)<5) or synonym == '':    # Check if synonym is a single word with numbers (ex: SA1) or doesn't exist
                         break
                     else:
                         labels_file.write(f"{synonym}\n")
@@ -200,7 +200,11 @@ def edit_file(original_file, new_file):
                         re.search('^plants$', line, re.IGNORECASE) or \
                         re.search('^phyla$', line, re.IGNORECASE) or \
                         re.search('^microbiota$', line, re.IGNORECASE) or \
+                        re.search('^archaea$', line, re.IGNORECASE) or \
+                        re.search('^eubacteria$', line, re.IGNORECASE) or \
                         re.search('^bacteria$', line, re.IGNORECASE) or \
+                        re.search('^rhizobacteria$', line, re.IGNORECASE) or \
+                        re.search('^rhizobacterium$', line, re.IGNORECASE) or \
                         re.search('^bacterium$', line, re.IGNORECASE) or \
                         re.search('^viruses$', line, re.IGNORECASE) or \
                         re.search('^virus$', line, re.IGNORECASE) or \
@@ -310,11 +314,12 @@ def final_editing_microorganisms():
 
     # Handling labels file: only need to add the extra terms (order is irrelevant)
     with open(output_labels_file, 'a', encoding='utf8') as labels_file:
-        labels_file.write(f"Bacillus megaterium\nGlomus etunicatum\nTurnip mosaic potyvirus\nSaccharibacteria\nPseudomonas stutzeri")
+        labels_file.write(f"Bacillus megaterium\nGlomus etunicatum\nTurnip mosaic potyvirus\nSaccharibacteria\nPseudomonas stutzeri\nAMF")
 
     # Handling synonyms file: add extra terms near synonyms (order is IMPORTANT)
     replace_text(output_synonyms_file,[
         ("Priestia megaterium", f"Priestia megaterium\nBacillus megaterium"),
+        ("Glomeromycotina",f"Glomeromycotina\nAMF"),
         ("Stutzerimonas stutzeri",f"Stutzerimonas stutzeri\nPseudomonas stutzeri"),
         ("Entrophospora etunicata", f"Entrophospora etunicata\nGlomus etunicatum"),
         ("Turnip mosaic potyvirus TuMV", f"Turnip mosaic potyvirus TuMV\nTurnip mosaic potyvirus"),
@@ -325,6 +330,7 @@ def final_editing_microorganisms():
     with open(output_links_file, 'a', encoding='utf8') as links_file:
         links_file.write(
         "Bacillus megaterium|http://purl.obolibrary.org/obo/NCBITaxon_1404"
+        "AMF|http://purl.obolibrary.org/obo/NCBITaxon_214504"
         "Pseudomonas stutzeri|http://purl.obolibrary.org/obo/NCBITaxon_316"
         "Glomus etunicatum|http://purl.obolibrary.org/obo/NCBITaxon_937382"
         "Turnip mosaic potyvirus|http://purl.obolibrary.org/obo/NCBITaxon_12230"

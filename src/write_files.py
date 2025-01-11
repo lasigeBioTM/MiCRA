@@ -119,7 +119,7 @@ def write_file(pmcid, destination_path, objective):
                         final_line = edited_line.replace('\n', ' ')
                         file.write(final_line)
 
-    file_writing_runtimes.append(time.time() - start_time)
+    file_writing_runtimes.append(time.time() - start_time) #----------------------------------------------------------------- LOG: TIME
     return
 
 
@@ -132,18 +132,25 @@ def edit_text(line):
     """
 
     if "table-wrap" not in line:                # If the line does not contain a table, text is edited
-        line = re.sub(r'<xref.+?xref>', ' -ref- ', line)
-        line = re.sub(r'Fig.', 'Figure', line)
-        line = re.sub(r'<.+?>', '', line)
-        line = re.sub(r'\]','', line)
-        line = re.sub(r'\[','', line)
-        #line = re.sub(r'\)','', line)     
-        #line = re.sub(r'\(','', line)   
-        line = re.sub(r'\'','', line)
-        line = re.sub(r'\"','', line)
-        line = re.sub('&gt','', line)
-        line = re.sub('&#x', ' ', line)
-        line = re.sub("a.k.a.", 'a.k.a', line)
+
+        line = re.sub(r'<.+?>', '', line)               # Remove every element within < > (typical XML content)
+        line = re.sub(r'\]','', line)                   # Remove [ symbols  (typical XML content)
+        line = re.sub(r'\[','', line)                   # Remove ] symbols  (typical XML content)
+        line = re.sub('&apos','', line)                 # Remove ' symbols  (typical XML content)
+        line = re.sub('&quot','', line)                 # Remove " symbols  (typical XML content)
+        line = re.sub('&lt','', line)                   # Remove < symbols  (typical XML content)
+        line = re.sub('&gt','', line)                   # Remove > symbols  (typical XML content)
+        line = re.sub('&amp','', line)                  # Remove & symbols  (typical XML content)
+        line = re.sub('&#x', '', line)                  # Remove character references  (typical XML content) 
+        line = re.sub(r'<xref.+?xref>', '-REF-', line)  # Remove references
+        line = re.sub(r'Fig\.\s\d',' ', line)           # Remove figures (abbreviation - Fig.)
+        line = re.sub(r'Figure\s\d','', line)           # Remove figures (full word - Figure)
+        line = re.sub(r'\▪','-', line)                  # Replace bullet symbols with hyphens for itemization
+        line = re.sub(r'\n','', line)                   # Remove paragraph breaks
+        line = re.sub(r'\t','',line)                    # Remove tab spaces
+        line = re.sub(r'\s{3,}','. ', line)             # Replace 3 or more whitespaces with '. ' for better splitting
+        line = re.sub('a.k.a.', 'a.k.a', line)          # Remove last period point from 'a.k.a.' to reduce parsing errors
+
         new_line = line
     
     else:
@@ -170,7 +177,7 @@ def main():
     start_time = time.time() #------------------------------------------------------------------------------------------ LOG: TIME   
     
     os.system('mkdir -p corpus_data/articles || true') # Main dir for edited text corpus (to use for MER)
-    articles_path = os.path.join('corpus_data','articles')
+    articles_path = os.path.join('corpus_data','articles')  # 'corpus_data/articles'
     write(articles_path)
 
     print(f"RAW CORPUS CREATION PROCESS RUNTIME:  {time.time() - start_time:.1f} seconds") #----------------------------- LOG: TIME
