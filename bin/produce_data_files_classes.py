@@ -14,7 +14,7 @@ def read_classes_into_array(file_path):
     """
 
     lines = []
-    with open(file_path, 'r', encoding='utf8') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         lines = [line.strip().split(" | ")[1] for line in file.readlines()]  # Strip newline characters and names
 
     return lines
@@ -51,9 +51,9 @@ def start_process_owl_file(ontology, lines, labels_file, links_file, synonyms_fi
         if cls.iri in lines:
 
             # Write class label and IRI to the output files
-            labels_file.write(f"{strip_label(cls.label)}\n")
-            synonyms_file.write(f"{strip_label(cls.label)}\n")
-            links_file.write(f"{strip_label(cls.label)}|{strip_label(cls.iri)}\n")
+            labels_file.write(f"{strip_label(str(cls.label).lower())}\n")
+            synonyms_file.write(f"{strip_label(str(cls.label).lower())}\n")
+            links_file.write(f"{strip_label(str(cls.label).lower())}|{strip_label(cls.iri)}\n")
             ids_to_process.append(cls.iri)
 
             # Process and write synonyms
@@ -61,16 +61,16 @@ def start_process_owl_file(ontology, lines, labels_file, links_file, synonyms_fi
                 if (any(char.isdigit() for char in synonym) and ' ' not in synonym and len(synonym)<5 or synonym == ''):    # Check if synonym is a single word with numbers (ex: SA1) or doesn't exist
                     break
                 else:
-                    labels_file.write(f"{synonym}\n")
-                    synonyms_file.write(f"{synonym}\n")
-                    links_file.write(f"{synonym}|{cls.iri}\n")
+                    labels_file.write(f"{synonym.lower()}\n")
+                    synonyms_file.write(f"{synonym.lower()}\n")
+                    links_file.write(f"{synonym.lower()}|{cls.iri}\n")
             for synonym in cls.hasRelatedSynonym:
                 if (any(char.isdigit() for char in synonym) and ' ' not in synonym and len(synonym)<5 or synonym == ''):    # Check if synonym is a single word with numbers (ex: SA1) or doesn't exist
                     break
                 else:
-                    labels_file.write(f"{synonym}\n")
-                    synonyms_file.write(f"{synonym}\n")
-                    links_file.write(f"{synonym}|{cls.iri}\n")
+                    labels_file.write(f"{synonym.lower()}\n")
+                    synonyms_file.write(f"{synonym.lower()}\n")
+                    links_file.write(f"{synonym.lower()}|{cls.iri}\n")
         
             synonyms_file.write("-\n")
         
@@ -114,9 +114,9 @@ def process_owl_file(ontology, lines, labels_file, links_file, synonyms_file):
                     no_mappings.add(str(sub_cls).replace('obo.', ''))
 
                 # Write subclass label and IRI to the output files
-                labels_file.write(f"{strip_label(sub_cls.label)}\n")
-                synonyms_file.write(f"{strip_label(sub_cls.label)}\n")
-                links_file.write(f"{strip_label(sub_cls.label)}|{strip_label(sub_cls.iri)}\n")
+                labels_file.write(f"{strip_label(str(sub_cls.label).lower())}\n")
+                synonyms_file.write(f"{strip_label(str(sub_cls.label).lower())}\n")
+                links_file.write(f"{strip_label(str(sub_cls.label).lower())}|{strip_label(sub_cls.iri)}\n")
                 ids_to_process.append(sub_cls.iri)
 
                 # Process and write synonyms
@@ -124,23 +124,23 @@ def process_owl_file(ontology, lines, labels_file, links_file, synonyms_file):
                     if (any(char.isdigit() for char in synonym) and ' ' not in synonym and len(synonym)<5) or synonym == '':    # Check if synonym is a single word with numbers (ex: SA1) or doesn't exist
                         break
                     else:
-                        labels_file.write(f"{synonym}\n")
-                        synonyms_file.write(f"{synonym}\n")
-                        links_file.write(f"{synonym}|{sub_cls.iri}\n")
+                        labels_file.write(f"{synonym.lower()}\n")
+                        synonyms_file.write(f"{synonym.lower()}\n")
+                        links_file.write(f"{synonym.lower()}|{sub_cls.iri}\n")
                 for synonym in sub_cls.hasRelatedSynonym:
                     if (any(char.isdigit() for char in synonym) and ' ' not in synonym and len(synonym)<5) or synonym == '':    # Check if synonym is a single word with numbers (ex: SA1) or doesn't exist
                         break
                     else:
-                        labels_file.write(f"{synonym}\n")
-                        synonyms_file.write(f"{synonym}\n")
-                        links_file.write(f"{synonym}|{sub_cls.iri}\n")
+                        labels_file.write(f"{synonym.lower()}\n")
+                        synonyms_file.write(f"{synonym.lower()}\n")
+                        links_file.write(f"{synonym.lower()}|{sub_cls.iri}\n")
                     
                 synonyms_file.write("-\n")
     
 
     print(f'Number of classes with no mappings: {len(no_mappings)}') #--------------------------------------------------- LOG: INFO
     print(f'Class IDs:')
-    print('\n'.join(no_mappings)) #--------------------------------------------------------------------------------- LOG: INFO
+    print('; '.join(no_mappings)) #--------------------------------------------------------------------------------- LOG: INFO
 
 
 
@@ -155,10 +155,10 @@ def edit_file(original_file, new_file):
 
     lines_seen = set()  # Holds lines already seen
 
-    with open(original_file, 'r', encoding='utf8') as input_file:
+    with open(original_file, 'r', encoding='utf-8') as input_file:
         lines = input_file.readlines()
 
-        with open(new_file, 'w', encoding='utf8') as output_file:
+        with open(new_file, 'w', encoding='utf-8') as output_file:
             for line in lines:
 
                 # Remove unwanted characters
@@ -166,6 +166,8 @@ def edit_file(original_file, new_file):
                 line = re.sub("'$", '', line)
                 line = re.sub(r'\[', '', line)
                 line = re.sub(r'\]', '', line)
+                line = re.sub(r'\(', '', line)
+                line = re.sub(r'\)', '', line)
 
                 # If line is a separator, write it to output file
                 if line == '-\n':
@@ -231,7 +233,7 @@ def edit_file(original_file, new_file):
 
     
     output_file.close()
-    os.system(f'rm -f {original_file}')
+    os.remove(original_file)
 
 
 
@@ -265,10 +267,10 @@ def edit_synonyms_file():
 
 
 def edit_links_file():
-    """Takes the temporary links file, edits it and creates the version to be lowercased
+    """Takes the temporary links file, edits it and creates the final version
 
     :return str: name of the new links file
-    :return side effect: new file with unique edited entries and additional ones
+    :return side effect: creates new file with unique edited entries and additional ones
     """
 
     input_file = file_links_path
@@ -276,7 +278,7 @@ def edit_links_file():
     edit_file(input_file, output_file)
 
     return output_file
-    
+
 
 
 def replace_text(file_path, replacement_list):
@@ -313,28 +315,30 @@ def final_editing_microorganisms():
     """
 
     # Handling labels file: only need to add the extra terms (order is irrelevant)
-    with open(output_labels_file, 'a', encoding='utf8') as labels_file:
-        labels_file.write(f"Bacillus megaterium\nGlomus etunicatum\nTurnip mosaic potyvirus\nSaccharibacteria\nPseudomonas stutzeri\nAMF")
+    with open(output_labels_file, 'a', encoding='utf-8') as labels_file:
+        labels_file.write(f"bacillus megaterium\nglomus etunicatum\nturnip mosaic potyvirus\nsaccharibacteria\npseudomonas stutzeri\namf\nrhizoglomus irregularis")
 
     # Handling synonyms file: add extra terms near synonyms (order is IMPORTANT)
     replace_text(output_synonyms_file,[
-        ("Priestia megaterium", f"Priestia megaterium\nBacillus megaterium"),
-        ("Glomeromycotina",f"Glomeromycotina\nAMF"),
-        ("Stutzerimonas stutzeri",f"Stutzerimonas stutzeri\nPseudomonas stutzeri"),
-        ("Entrophospora etunicata", f"Entrophospora etunicata\nGlomus etunicatum"),
-        ("Turnip mosaic potyvirus TuMV", f"Turnip mosaic potyvirus TuMV\nTurnip mosaic potyvirus"),
-        ("Candidatus Saccharibacteria", f"Candidatus Saccharibacteria\nSaccharibacteria"),
+        ("priestia megaterium", f"priestia megaterium\nbacillus megaterium"),
+        ("glomeromycotina",f"glomeromycotina\namf"),
+        ("glomus intraradices",f"glomus intraradices\nrhizoglomus irregularis"),
+        ("stutzerimonas stutzeri",f"stutzerimonas stutzeri\npseudomonas stutzeri"),
+        ("entrophospora etunicata", f"entrophospora etunicata\nglomus etunicatum"),
+        ("turnip mosaic potyvirus tumv", f"turnip mosaic potyvirus tumv\nturnip mosaic potyvirus"),
+        ("candidatus saccharibacteria", f"candidatus saccharibacteria\nsaccharibacteria"),
         ])
 
     # Handling links file: add extra terms with corresponding links from linked synonym (order is irrelevant)
-    with open(output_links_file, 'a', encoding='utf8') as links_file:
+    with open(output_links_file, 'a', encoding='utf-8') as links_file:
         links_file.write(
-        "Bacillus megaterium|http://purl.obolibrary.org/obo/NCBITaxon_1404"
-        "AMF|http://purl.obolibrary.org/obo/NCBITaxon_214504"
-        "Pseudomonas stutzeri|http://purl.obolibrary.org/obo/NCBITaxon_316"
-        "Glomus etunicatum|http://purl.obolibrary.org/obo/NCBITaxon_937382"
-        "Turnip mosaic potyvirus|http://purl.obolibrary.org/obo/NCBITaxon_12230"
-        "Saccharibacteria|http://purl.obolibrary.org/obo/NCBITaxon_95818"
+        f"bacillus megaterium|http://purl.obolibrary.org/obo/NCBITaxon_1404"
+        f"amf|http://purl.obolibrary.org/obo/NCBITaxon_214504"
+        f"rhizoglomus irregularis|http://purl.obolibrary.org/obo/NCBITaxon_4876"
+        f"pseudomonas stutzeri|http://purl.obolibrary.org/obo/NCBITaxon_316"
+        f"glomus etunicatum|http://purl.obolibrary.org/obo/NCBITaxon_937382"
+        f"turnip mosaic potyvirus|http://purl.obolibrary.org/obo/NCBITaxon_12230"
+        f"saccharibacteria|http://purl.obolibrary.org/obo/NCBITaxon_95818"
         )
 
 
@@ -346,11 +350,11 @@ def final_editing_plants():
     """
 
     # Handling labels file: only need to add the extra terms (order is irrelevant)
-    with open(output_labels_file, 'a', encoding='utf8') as labels_file:
+    with open(output_labels_file, 'a', encoding='utf-8') as labels_file:
         labels_file.write(f"pepper\n"
                           "bell pepper\n"
                           "red peppers\n"
-                          "Millet\n"
+                          "millet\n"
                           "sunflower\n"
                           "groundnut\n"
                           "groundnuts\n"
@@ -362,69 +366,70 @@ def final_editing_plants():
                           "grapevine\n"
                           "grape\n"
                           "grapes\n"
-                          "French lavender\n"
+                          "french lavender\n"
                           "jujube\n"
                           "squash\n"
                           "common bean\n"
                           "beans\n"
                           "bean\n"
-                          "Lavandula spica\n"
+                          "lavandula spica\n"
                           "lettuce")
 
     # Handling synonyms file: add extra terms near synonyms (order is IMPORTANT)
     replace_text(output_synonyms_file,[
-        ("Capsicum annuum", f"Capsicum annuum\npepper\nbell pepper"),
-        ("Capsicum annuum var. annuum",f"Capsicum annuum var. annuum\nred peppers"),
-        ("Poaceae", f"Poaceae\nmillet"),
-        ("Helianthus annuus", f"Helianthus annuus\nsunflower"),
-        ("Arachis hypogaea",f"Arachis hypogaea\ngroundnut\ngroundnuts"),
-        ("Brassica napus", f"Brassica napus\nrapeseed"),
-        ("Vigna radiata", f"Vigna radiata\nmung bean\nmoong\nmungbean"),
-        ("Sorghum",f"Sorghum\ngreat millet"),
-        ("Vitis vinifera", f"Vitis vinifera\ngrapevine\ngrapes\ngrape"),
-        ("Lavandula dentata", f"Lavandula dentata\nFrench lavender"),
-        ("Zizyphus jujuba", f"Zizyphus jujuba\njujube"),
-        ("Galega officinalis",f"Galega officinalis\ngoat's rue"),
-        ("Cucurbita", f"Cucurbita\nsquash"),
-        ("Phaseolus vulgaris",f"Phaseolus vulgaris\ncommon bean\nbeans\nbean"),
-        ("Lavandula latifolia", f"Lavandula latifolia\nLavandula spica"),
-        ("Lactuca sativa", f"Lactuca sativa\nlettuce")
+        ("capsicum annuum", f"capsicum annuum\npepper\nbell pepper"),
+        ("capsicum annuum var. annuum",f"capsicum annuum var. annuum\nred peppers"),
+        ("poaceae", f"poaceae\nmillet"),
+        ("helianthus annuus", f"helianthus annuus\nsunflower"),
+        ("arachis hypogaea",f"arachis hypogaea\ngroundnut\ngroundnuts"),
+        ("brassica napus", f"brassica napus\nrapeseed"),
+        ("vigna radiata", f"vigna radiata\nmung bean\nmoong\nmungbean"),
+        ("sorghum",f"sorghum\ngreat millet"),
+        ("vitis vinifera", f"vitis vinifera\ngrapevine\ngrapes\ngrape"),
+        ("lavandula dentata", f"lavandula dentata\nFrench lavender"),
+        ("zizyphus jujuba", f"zizyphus jujuba\njujube"),
+        ("galega officinalis",f"galega officinalis\ngoat's rue"),
+        ("cucurbita", f"cucurbita\nsquash"),
+        ("phaseolus vulgaris",f"phaseolus vulgaris\ncommon bean\nbeans\nbean"),
+        ("lavandula latifolia", f"lavandula latifolia\nlavandula spica"),
+        ("lactuca sativa", f"lactuca sativa\nlettuce")
         ])
 
     # Handling links file: add extra terms with corresponding links from linked synonym (order is irrelevant)
-    with open(output_links_file, 'a', encoding='utf8') as links_file:
+    with open(output_links_file, 'a', encoding='utf-8') as links_file:
         links_file.write(
-        "pepper|http://purl.obolibrary.org/obo/NCBITaxon_4072\n"
-        "bell pepper|http://purl.obolibrary.org/obo/NCBITaxon_4072\n"
-        "red peppers|http://purl.obolibrary.org/obo/NCBITaxon_40321\n"
-        "Millet|http://purl.obolibrary.org/obo/NCBITaxon_4479\n"
-        "sunflower|http://purl.obolibrary.org/obo/NCBITaxon_4232\n"
-        "groundnut|http://purl.obolibrary.org/obo/NCBITaxon_3818\n"
-        "groundnuts|http://purl.obolibrary.org/obo/NCBITaxon_3818\n"
-        "rapeseeed|http://purl.obolibrary.org/obo/NCBITaxon_3708\n"
-        "mung bean|http://purl.obolibrary.org/obo/NCBITaxon_157791\n"
-        "mungbean|http://purl.obolibrary.org/obo/NCBITaxon_157791\n"
-        "moong|http://purl.obolibrary.org/obo/NCBITaxon_157791\n"
-        "great millet|http://purl.obolibrary.org/obo/NCBITaxon_4557\n"
-        "grapevine|http://purl.obolibrary.org/obo/NCBITaxon_29760\n"
-        "grape|http://purl.obolibrary.org/obo/NCBITaxon_29760\n"
-        "grapes|http://purl.obolibrary.org/obo/NCBITaxon_29760\n"
-        "Lavandula dentata|http://purl.obolibrary.org/obo/NCBITaxon_1441374"
-        "jujube|http://purl.obolibrary.org/obo/NCBITaxon_326968\n"
-        "goat's rue|http://purl.obolibrary.org/obo/NCBITaxon_47101\n"
-        "squash|http://purl.obolibrary.org/obo/NCBITaxon_3660\n"
-        "common bean|http://purl.obolibrary.org/obo/NCBITaxon_3885"
-        "Lavandula spica|http://purl.obolibrary.org/obo/NCBITaxon_39331"
-        "beans|http://purl.obolibrary.org/obo/NCBITaxon_3885"
-        "bean|http://purl.obolibrary.org/obo/NCBITaxon_3885"
-        "lettuce|http://purl.obolibrary.org/obo/NCBITaxon_4236"
-        )    
+        f"pepper|http://purl.obolibrary.org/obo/NCBITaxon_4072\n"
+        f"bell pepper|http://purl.obolibrary.org/obo/NCBITaxon_4072\n"
+        f"red peppers|http://purl.obolibrary.org/obo/NCBITaxon_40321\n"
+        f"millet|http://purl.obolibrary.org/obo/NCBITaxon_4479\n"
+        f"sunflower|http://purl.obolibrary.org/obo/NCBITaxon_4232\n"
+        f"groundnut|http://purl.obolibrary.org/obo/NCBITaxon_3818\n"
+        f"groundnuts|http://purl.obolibrary.org/obo/NCBITaxon_3818\n"
+        f"rapeseeed|http://purl.obolibrary.org/obo/NCBITaxon_3708\n"
+        f"mung bean|http://purl.obolibrary.org/obo/NCBITaxon_157791\n"
+        f"mungbean|http://purl.obolibrary.org/obo/NCBITaxon_157791\n"
+        f"moong|http://purl.obolibrary.org/obo/NCBITaxon_157791\n"
+        f"great millet|http://purl.obolibrary.org/obo/NCBITaxon_4557\n"
+        f"grapevine|http://purl.obolibrary.org/obo/NCBITaxon_29760\n"
+        f"grape|http://purl.obolibrary.org/obo/NCBITaxon_29760\n"
+        f"grapes|http://purl.obolibrary.org/obo/NCBITaxon_29760\n"
+        f"lavandula dentata|http://purl.obolibrary.org/obo/NCBITaxon_1441374\n"
+        f"jujube|http://purl.obolibrary.org/obo/NCBITaxon_326968\n"
+        f"goat's rue|http://purl.obolibrary.org/obo/NCBITaxon_47101\n"
+        f"squash|http://purl.obolibrary.org/obo/NCBITaxon_3660\n"
+        f"common bean|http://purl.obolibrary.org/obo/NCBITaxon_3885\n"
+        f"lavandula spica|http://purl.obolibrary.org/obo/NCBITaxon_39331\n"
+        f"beans|http://purl.obolibrary.org/obo/NCBITaxon_3885\n"
+        f"bean|http://purl.obolibrary.org/obo/NCBITaxon_3885\n"
+        f"lettuce|http://purl.obolibrary.org/obo/NCBITaxon_4236\n"
+        )
 
 
-def split_labels_into_files(labels):
+
+def split_labels_into_files(labels, filename):
     """Divides the labels found into different files according to the number of words and uniqueness
     
-    :param input_file (str): path to labels file (.txt)
+    :param labels (str): path to labels file (.txt)
     :return side effect: creates 4 files, each with different length labels
     """
 
@@ -433,15 +438,15 @@ def split_labels_into_files(labels):
     words_file = os.path.join('bin','MER','data',f'{filename}_words.txt')
     words2_file = os.path.join('bin','MER','data',f'{filename}_words2.txt')
 
-    with open(word1_file, 'w', encoding='utf8') as single_file, \
-         open(word2_file, 'w', encoding='utf8') as two_word_file, \
-         open(words_file, 'w', encoding='utf8') as multi_word_file, \
-         open(words2_file, 'w', encoding='utf8') as unique_two_word_file:
+    with open(word1_file, 'w', encoding='utf-8') as single_file, \
+         open(word2_file, 'w', encoding='utf-8') as two_word_file, \
+         open(words_file, 'w', encoding='utf-8') as multi_word_file, \
+         open(words2_file, 'w', encoding='utf-8') as unique_two_word_file:
 
         two_word_seen = set()
 
         # Process each label from the input file
-        with open(labels, 'r', encoding='utf8') as file:
+        with open(labels, 'r', encoding='utf-8') as file:
             for line in file:
                 words = line.strip().split()
 
@@ -465,11 +470,11 @@ def split_labels_into_files(labels):
 
 
 
-def lowercase_links_file(links_file):
-    """Lowercases every label for matching with get_entities.sh
+def tsv_links_file(links_file):
+    """Writes every entry of the links file to a .tsv for matching with get_entities.sh
     
     :param links_file (str): labels and IDs file (.txt)
-    :return side effect: creates lowercase labels and IDs file (.tsv)
+    :return side effect: creates final labels and IDs file (.tsv)
     """
 
     links_name = links_file.replace('_temp2links.txt','')
@@ -481,6 +486,8 @@ def lowercase_links_file(links_file):
                 id = line.split('|')[1]
                 entity = (f'{label}\t{id}')
                 output_file.write(entity)
+    
+    os.remove(links_file)
 
 
 
@@ -494,6 +501,19 @@ print("---------------------------\n  CREATING LEXICON FILES\n------------------
 #   HANDLE SPECIFIC CLASSES FILES FOR EACH DATA TYPE    #
 #########################################################
 
+MER_data_path = os.path.join('bin','MER','data')
+logfiles_path = 'logfiles'
+
+os.makedirs(MER_data_path, exist_ok=True) # dir for lexicon text files
+os.makedirs(logfiles_path,exist_ok=True) # dir for logfiles text files
+
+# Load the ontology
+start_time = time.time() #----------------------------------------------------------------------------------------------- LOG: TIME
+ontology_path = os.path.join('.','bin','ncbitaxon.owl')               ### CHANGEABLE: Ontology file you're using ###
+ontology = get_ontology(ontology_path).load()
+end_time = time.time() #------------------------------------------------------------------------------------------------- LOG: TIME
+print(f'\nLoading ontology runtime: {end_time - start_time:8.1f} seconds\n----------------------------------------') #--- LOG: INFO
+
 data_sources = ['microorganisms', 'plants']         # Stress lexicon files were manually created
 
 for data_type in data_sources:
@@ -505,19 +525,15 @@ for data_type in data_sources:
     lines = read_classes_into_array(classes_path)  
 
     # Paths to files
-    ontology_path = os.path.join('.','bin','ncbitaxon.owl')               ### CHANGEABLE: Ontology file you're using ###
     filename = classes_path.replace("./bin/classes_","").replace(".txt","")
     file_labels_path = os.path.join('.','bin','MER','data',f'{filename}_templabels.txt')
     file_links_path = os.path.join('.','bin','MER','data',f'{filename}_templinks.txt')
     file_synonyms_path = os.path.join('.','bin','MER','data',f'{filename}_tempsynonyms.txt')
 
-    # Load the ontology
-    ontology = get_ontology(ontology_path).load()
-
     # Open output files for writing
-    labels_file = open(file_labels_path, 'w', encoding='utf8')
-    links_file = open(file_links_path, 'w', encoding='utf8')
-    synonyms_file = open(file_synonyms_path, 'w', encoding='utf8')
+    labels_file = open(file_labels_path, 'w', encoding='utf-8')
+    links_file = open(file_links_path, 'w', encoding='utf-8')
+    synonyms_file = open(file_synonyms_path, 'w', encoding='utf-8')
 
     # Process the ontology file and remove duplicates from resulting synonyms file
     start_process_owl_file(ontology, lines, labels_file, links_file, synonyms_file)
@@ -532,11 +548,9 @@ for data_type in data_sources:
         final_editing_plants()
 
     # Split the labels file into the required files
-    split_labels_into_files(output_labels_file)
+    split_labels_into_files(output_labels_file, filename)
+    tsv_links_file(output_links_file)
 
-    # Lowercase all labels in links file and removes temporary file
-    lowercase_links_file(output_links_file)
-    os.system(f'rm -f {output_links_file}')
     print(f"\n{data_type.capitalize()} lexicon files have been created at bin/MER/data")
 
     labels_file.close()

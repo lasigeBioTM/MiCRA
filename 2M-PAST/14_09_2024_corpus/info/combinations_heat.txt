@@ -1,0 +1,275 @@
+
+** MICROORGANISM + PLANT COMBINATIONS FOR HEAT STRESS **
+
+Aspergillus aculeatus + Lolium perenne --> 7 occurrences
+References:
+ According to our results, we propose four important Aspergillus aculeatus-mediated mechanisms of perennial ryegrass response to drought and heat stress: 1 Aspergillus aculeatus can regulate hormone homeostasis, 2 reduced the damage to photosynthetic system of plants induced by drought and heat stress, 3 reduced oxidative damage of plants induced by drought and heat stress, 4 altered gene expression levels related to drought and heat stress.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7933552)
+ Here, the protective effects of Aspergillus aculeatus on OJIP fluorescence transient of perennial ryegrass subjected to heat stress are shown in -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7933552)
+ Taking these results together, Aspergillus aculeatus may confer drought and heat tolerance to perennial ryegrass by altering the expression of drought and heat-related genes.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7933552)
+ In a study, increased expression of heat shock protein gene HSP17.8 and Dehydration-responsive gene DREB1 and decreased expression of POD47 and FeSOD have been reported for fungal Aspergillus aculeatus conferred heat stress tolerance in Lolium perenne grass -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8940538)
+ Our results provide an evidence of the protective role of Aspergillus aculeatus in perennial ryegrass response to drought and heat stresses.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7933552)
+ Conclusion In summary, by using perennial ryegrass plants and mutualistic Aspergillus aculeatus, we provide the evidence for the fungal alleviatory effects to the adverse effects of drought and heat stress.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7933552)
+ After inoculation of Aspergillus aculeatus, the damage of heat stress to perennial ryegrass was alleviated, this was manifested as the increased POD activity and the decreased CAT activity.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7933552)
+
+-------------------------------------
+
+Bacillus cereus + Solanum lycopersicum --> 6 occurrences
+References:
+ in -REF-, they reported that ACC deaminase producing Bacillus cereus mitigate heat stress in tomato and observed drastic morphological and physiological effects on tomato plants under heat stress.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9319882)
+ Recently, Bacillus cereus strains were shown to confer tolerance to heat stress in soybean -REF- and tomato -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9293653)
+ -REF-, heat stress enhanced EPS production of Bacillus cereus and cleavage of 1-aminocyclopropane-1-carboxylate ACC of plant inoculated with this strain to significantly reduce the adverse effects of heat 42 °C on tomato growth.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8225083)
+ had demonstrated how thermotolerant Bacillus cereus mitigate heat stress in tomato and soybean through moderation in the auxin levels.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9319882)
+ -REF- showed an increase in the number of fruits and flowers in two varieties of tomato plant, i.e., Sweetie and Riogrande, upon inoculation with EPS-producing Bacillus cereus, in high temperature stress.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
+ Increased levels of CAT activity and proline content were also observed in Bacillus cereus mediated mitigation of heat stress in tomato -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9293653)
+
+-------------------------------------
+
+Bacillus cereus + Glycine max --> 5 occurrences
+References:
+ Application of Bacillus cereus SA1 under high-temperature stress enhanced the defense system of soybean plants by increasing superoxide dismutase activity, ascorbic acid peroxidase and glutathione content, and expression of heat shock proteins GmLAX3 and GmAKT2, which have been linked to reduced detoxification of reactive oxygen species, increased potassium gradients, and altered auxin and ABA stimuli, and which are critical for plants under heat stress Khan et al., -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8714756)
+ Recently, Bacillus cereus strains were shown to confer tolerance to heat stress in soybean -REF- and tomato -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9293653)
+ had demonstrated how thermotolerant Bacillus cereus mitigate heat stress in tomato and soybean through moderation in the auxin levels.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9319882)
+ reported that thermotolerant Bacillus cereus strain SA1 alleviated heat stress in soybean plants by enhancing antioxidant defense enzymes and altering hormonal profiles -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9600683)
+ An increase in proline content and APX activity levels was observed during Bacillus cereus SA1 strain mediated heat stress tolerance in soybean, where SA1 treated soybean plants exhibited several folds higher APX activity levels and proline content over untreated control plants under heat stress -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9293653)
+
+-------------------------------------
+
+Azospirillum brasilense + Triticum aestivum --> 5 occurrences
+References:
+ Auxin producing Azospirillum brasilense was reported to mitigate heat stress in wheat by maintaining water status -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9319882)
+ -REF- evaluated management of heat stress in two wheat varieties Olivin and Sids1 under heat stress conditions and revealed that the application of Bacillus amyloliquefaciens UCMB5113 or Azospirillum brasilense NO40 improved the growth of plants in heat stress.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
+ Similarly, inoculation of wheat seedlings with Bacillus amyloliquefaciens, Azospirillum brasilense, Bacillus safensis, or Pseudomonas brassicacearum reduced the generation of reactive oxygen species and adjust wheat seedlings metabolism to enhance plant resistance to heat stress 40–45 °C -REF-, -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8225083)
+ In wheat, auxin-producing Azospirillum brasilense was shown to alleviate heat stress by maintaining water status -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10374332)
+ Similar effects have been shown by Azospirillum brasilense and B. amyloliquefaciens on wheat leaves, which cause the upregulation of APX1, S-adenosylmethionine synthase, and a heat shock protein gene -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8998651)
+
+-------------------------------------
+
+Pseudomonas putida + Triticum aestivum --> 5 occurrences
+References:
+ For rain-fed field crops, inoculation of Pseudomonas putida resulted in significant improvement in heat tolerance of wheat by minimizing ROS generation -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8773105)
+ Several other studies have reported a similar mechanism of heat stress tolerance in host plants mediated by thermotolerant endophytes and rhizobacteria, such as Bacillus amyloliquefaciens in rice -REF-, Pseudomonas putida strain AKMP7 in wheat -REF-, and Pseudomonas sp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9600683)
+ strain AKM-P6 and Pseudomonas putida strain AKM-P7 enhanced the tolerance of sorghum and wheat seedlings to high temperature stress due to the synthesis of high-molecular-weight proteins, and also improved the levels of cellular metabolites -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8234610)
+ The tZ-producing strain Pseudomonas putida AKMP7 has been shown to alleviate heat stress in wheat -REF-; -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10326438)
+ In wheat, Pseudomonas putida AKMP7 has enhanced the shoot and root length, dry biomass, tillers number, grain formation, and decreased membrane injury and antioxidant enzyme activities such as SOD, APX, and CAT under heat stress conditions -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10374332)
+
+-------------------------------------
+
+Bacillus velezensis + Triticum aestivum --> 4 occurrences
+References:
+ -REF- reported plant growth-promoting rhizospheric strain Bacillus velezensis 5113 inoculation resulted in a metabolic modulation and involvement of many regulatory proteins in wheat leaves to develop heat, cold and drought stress tolerance.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
+ Previously, we showed that Bacillus velezensis UCMB5113 was able to improve wheat tolerance against heat, cold and drought stress conditions -REF-, -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6841942)
+ The Bacillus velezensis inoculation induced an increased abiotic stress tolerance, and the pattern of metabolic modulation and abundance of several proteins were found to be similar in wheat challenged with different abiotic stress factors such as heat, cold, and drought -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8940538)
+ Interestingly, under normal conditions, Bacillus velezensis 5113 had practically no effect on the AsA–GSH cycle in wheat but significantly reduced APX activity under heat stress.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8708585)
+
+-------------------------------------
+
+Burkholderia phytofirmans + Solanum lycopersicum --> 2 occurrences
+References:
+ -REF- reported that bacterium Burkholderia phytofirmans significantly enhanced the production of phenolics, proline, and starch under heat stress and was able to protect the tissues of tomato against heat.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8234610)
+ Another example is the bacterium Burkholderia phytofirmans that makes the host plant resilient to multiple stressors, such as improving tolerance to cold in grapevine, heat in tomato, drought in wheat, and salt and freezing in Arabidopsis -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9866067)
+
+-------------------------------------
+
+Bacillus tequilensis + Glycine max --> 2 occurrences
+References:
+ For Bacillus tequilensis SSB07, its plant growth-enhancing effects were further increased under heat stress, by significantly upregulating the endogenous JA and SA contents in the soybean phyllosphere while down-regulating the production of stress-responsive ABA -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7961088)
+ In Kang’s -REF- study, in heat-stressed soybean plants inoculated with Bacillus tequilensis, the endogenous levels of JA and SA were dramatically elevated, but the endogenous level of ABA was significantly downregulated.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10347528)
+
+-------------------------------------
+
+Thermomyces + Cucumis sativus --> 2 occurrences
+References:
+ Thermomyces fungal endophyte isolated from extreme hot desert-adapted plants eliminates the adverse effects of heat stress on cucumber plants by increasing root length, improving photosystem II efficiency, photosynthesis rate, and water use efficiency relative to endophyte-free plants -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9205400)
+ In plants colonized by Curvularia protuberata that is infected with Curvularia thermal tolerance virus, imposition of heat stress increased the expression levels of genes encoding trehalose phosphatase, betaine aldehyde dehydrogenase, taurine catabolism dioxygenase, and scytalone dehydratase -REF-, while an endophytic Thermomyces strain induced the expression of phenylalanine ammonia-lyase in cucumber under heat stress -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8828500)
+
+-------------------------------------
+
+Rhodotorula + Phalaenopsis aphrodite --> 2 occurrences
+References:
+ Under high temperature stress conditions, the structure of the root endophytic microorganisms community in the roots undergoes significant changes, and the enrichment of beneficial microbial communities such as Enterobacteriaceae bacteria and Rhodotorula fungi helps increase Pro content, stabilize the endophytic environment of Phalaenopsis aphrodite roots, enhance the heat resistance of Phalaenopsis aphrodite, and their increased abundance contributes to the production of negative oxygen ions by Phalaenopsis aphrodite.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11361983)
+ Under high temperature stress conditions, the structure of the root endophytic microorganisms community in the roots undergoes significant changes, and the enrichment of beneficial microbial communities such as Enterobacteriaceae bacteria and Rhodotorula fungi helps increase Pro content, stabilize the endophytic environment of Phalaenopsis aphrodite roots, enhance the heat resistance of Phalaenopsis aphrodite, and their increased abundance contributes to the production of negative oxygen ions by Phalaenopsis aphrodite.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11361983)
+
+-------------------------------------
+
+Enterobacteriaceae + Phalaenopsis aphrodite --> 2 occurrences
+References:
+ Under high temperature stress conditions, the structure of the root endophytic microorganisms community in the roots undergoes significant changes, and the enrichment of beneficial microbial communities such as Enterobacteriaceae bacteria and Rhodotorula fungi helps increase Pro content, stabilize the endophytic environment of Phalaenopsis aphrodite roots, enhance the heat resistance of Phalaenopsis aphrodite, and their increased abundance contributes to the production of negative oxygen ions by Phalaenopsis aphrodite.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11361983)
+ Under high temperature stress conditions, the structure of the root endophytic microorganisms community in the roots undergoes significant changes, and the enrichment of beneficial microbial communities such as Enterobacteriaceae bacteria and Rhodotorula fungi helps increase Pro content, stabilize the endophytic environment of Phalaenopsis aphrodite roots, enhance the heat resistance of Phalaenopsis aphrodite, and their increased abundance contributes to the production of negative oxygen ions by Phalaenopsis aphrodite.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11361983)
+
+-------------------------------------
+
+Bacillus amyloliquefaciens + Triticum aestivum --> 2 occurrences
+References:
+ -REF- evaluated management of heat stress in two wheat varieties Olivin and Sids1 under heat stress conditions and revealed that the application of Bacillus amyloliquefaciens UCMB5113 or Azospirillum brasilense NO40 improved the growth of plants in heat stress.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
+ Similarly, inoculation of wheat seedlings with Bacillus amyloliquefaciens, Azospirillum brasilense, Bacillus safensis, or Pseudomonas brassicacearum reduced the generation of reactive oxygen species and adjust wheat seedlings metabolism to enhance plant resistance to heat stress 40–45 °C -REF-, -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8225083)
+
+-------------------------------------
+
+Amauroascus niger + Glycine max --> 1 occurrences
+References:
+ Amauroascus niger enhanced heat tolerance of soybean and sunflower by control of ROS and peroxidative damage.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8072474)
+
+-------------------------------------
+
+Achromobacter piechaudii + Pepper --> 1 occurrences
+References:
+ Recently reported ACC deaminase activity produced Achromobacter piechaudii, which moderated ethylene metabolism and ultimately resulted in better heat tolerance in pepper -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9319882)
+
+-------------------------------------
+
+Amauroascus niger + Helianthus annuus --> 1 occurrences
+References:
+ Amauroascus niger enhanced heat tolerance of soybean and sunflower by control of ROS and peroxidative damage.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8072474)
+
+-------------------------------------
+
+Aspergillus + Lolium perenne --> 1 occurrences
+References:
+ According to our results, we propose four important Aspergillus aculeatus-mediated mechanisms of perennial ryegrass response to drought and heat stress: 1 Aspergillus aculeatus can regulate hormone homeostasis, 2 reduced the damage to photosynthetic system of plants induced by drought and heat stress, 3 reduced oxidative damage of plants induced by drought and heat stress, 4 altered gene expression levels related to drought and heat stress.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7933552)
+
+-------------------------------------
+
+Aspergillus japonicus + Helianthus annuus --> 1 occurrences
+References:
+ -REF- found that endophytic Aspergillus japonicus improved soybean and sunflower growth under heat-stressed conditions.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8533330)
+
+-------------------------------------
+
+Aspergillus japonicus + Glycine max --> 1 occurrences
+References:
+ -REF- found that endophytic Aspergillus japonicus improved soybean and sunflower growth under heat-stressed conditions.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8533330)
+
+-------------------------------------
+
+Bacillus amyloliquefaciens + Oryza sativa --> 1 occurrences
+References:
+ Several other studies have reported a similar mechanism of heat stress tolerance in host plants mediated by thermotolerant endophytes and rhizobacteria, such as Bacillus amyloliquefaciens in rice -REF-, Pseudomonas putida strain AKMP7 in wheat -REF-, and Pseudomonas sp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9600683)
+
+-------------------------------------
+
+Bacillus safensis + Triticum aestivum --> 1 occurrences
+References:
+ Similarly, inoculation of wheat seedlings with Bacillus amyloliquefaciens, Azospirillum brasilense, Bacillus safensis, or Pseudomonas brassicacearum reduced the generation of reactive oxygen species and adjust wheat seedlings metabolism to enhance plant resistance to heat stress 40–45 °C -REF-, -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8225083)
+
+-------------------------------------
+
+Bacillus licheniformis + Pepper --> 1 occurrences
+References:
+ Pepper plants treated with EPS-producing Bacillus licheniformis K11 strain showed the presence of six differentially expressed stress proteins and a 1.5-fold increase in the products of specific genes such as vacuolar H+-ATPase VA, dehydrin-like protein Capsicum annuum Cadhn, cytoplasmic small heat shock protein class I sHsp, and Capsicum annuum pathogenesis-related protein 10 CaPR as compared to untreated plants exposed to drought stress -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
+
+-------------------------------------
+
+Bacillus licheniformis + Capsicum annuum --> 1 occurrences
+References:
+ Pepper plants treated with EPS-producing Bacillus licheniformis K11 strain showed the presence of six differentially expressed stress proteins and a 1.5-fold increase in the products of specific genes such as vacuolar H+-ATPase VA, dehydrin-like protein Capsicum annuum Cadhn, cytoplasmic small heat shock protein class I sHsp, and Capsicum annuum pathogenesis-related protein 10 CaPR as compared to untreated plants exposed to drought stress -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
+
+-------------------------------------
+
+Bacillus aryabhattai + Chinese cabbage --> 1 occurrences
+References:
+ Another investigation on the role of two bacterial strains, Bacillus aryabhattai H26-2 and Boehmeria siamensis H30-3 on mitigation of heat and drought stress on two cultivars Ryeokkwang and Buram-3-hó of Chinese cabbage suggested exopolysaccharides as important bacterial determinants on alleviating not only these stresses but also on biocontrol activity against soft rot caused by Pectobacterium carotovorum subsp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
+
+-------------------------------------
+
+Bacillus + Phalaenopsis aphrodite --> 1 occurrences
+References:
+ Bacillus significantly enriches under high temperature conditions, helping to maintain the internal microecological stability of the root of Phalaenopsis aphrodite -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11361983)
+
+-------------------------------------
+
+Burkholderia phytofirmans psjn + Solanum tuberosum --> 1 occurrences
+References:
+ Furthermore, it was observed that the inoculation of potatoes with rhizobacteria such as Burkholderia phytofirmans PsJN played an adaptive role in heat stress.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9415082)
+
+-------------------------------------
+
+Burkholderia phytofirmans + Solanum tuberosum --> 1 occurrences
+References:
+ Furthermore, it was observed that the inoculation of potatoes with rhizobacteria such as Burkholderia phytofirmans PsJN played an adaptive role in heat stress.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9415082)
+
+-------------------------------------
+
+Brevibacterium linens + Oryza sativa --> 1 occurrences
+References:
+ Furthermore, ACC deaminase producing Brevibacterium linens enhance combined heat and UV-B radiation stress in rice plant and enhance plant biomass, photosynthetic traits and decrease ethylene emission -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9319882)
+
+-------------------------------------
+
+Bacillus velezensis ucmb5113 + Triticum aestivum --> 1 occurrences
+References:
+ Previously, we showed that Bacillus velezensis UCMB5113 was able to improve wheat tolerance against heat, cold and drought stress conditions -REF-, -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6841942)
+
+-------------------------------------
+
+Paraphaeosphaeria quadriseptata + Arabidopsis --> 1 occurrences
+References:
+ In another study, the co-cultivation of Arabidopsis plants with the fungus Paraphaeosphaeria quadriseptata increased plant heat stress tolerance -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9390090)
+
+-------------------------------------
+
+Paecilomyces formosus + Oryza sativa --> 1 occurrences
+References:
+ For example, phytohormones like IAA and secondary metabolites oxalic-, quinic-, tartaric-, and malic- acid produced by the fungus Paecilomyces formosus LWL1 can mitigate heat stress in rice, promoting height, dry weight, and chlorophyll content, and reducing the endogenous levels of stress hormones like ABA and jasmonates JAs Waqas et al.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9213282)
+
+-------------------------------------
+
+Paraburkholderia phytofirmans + Solanum lycopersicum --> 1 occurrences
+References:
+ Paraburkholderia phytofirmans strain PsJN which expresses ACC deaminase activity to alleviate and induce tolerance toward heat stress, has been reported in tomato -REF- and potato -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9634556)
+
+-------------------------------------
+
+Paraburkholderia phytofirmans + Solanum tuberosum --> 1 occurrences
+References:
+ Paraburkholderia phytofirmans strain PsJN which expresses ACC deaminase activity to alleviate and induce tolerance toward heat stress, has been reported in tomato -REF- and potato -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9634556)
+
+-------------------------------------
+
+Pseudomonas putida + Chrysopogon pauciflorus --> 1 occurrences
+References:
+ strain AKM-P6 and Pseudomonas putida strain AKM-P7 enhanced the tolerance of sorghum and wheat seedlings to high temperature stress due to the synthesis of high-molecular-weight proteins, and also improved the levels of cellular metabolites -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8234610)
+
+-------------------------------------
+
+Pseudomonas brassicacearum + Triticum aestivum --> 1 occurrences
+References:
+ Similarly, inoculation of wheat seedlings with Bacillus amyloliquefaciens, Azospirillum brasilense, Bacillus safensis, or Pseudomonas brassicacearum reduced the generation of reactive oxygen species and adjust wheat seedlings metabolism to enhance plant resistance to heat stress 40–45 °C -REF-, -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8225083)
+
+-------------------------------------
+
+Pseudomonas + Triticum aestivum --> 1 occurrences
+References:
+ Several other studies have reported a similar mechanism of heat stress tolerance in host plants mediated by thermotolerant endophytes and rhizobacteria, such as Bacillus amyloliquefaciens in rice -REF-, Pseudomonas putida strain AKMP7 in wheat -REF-, and Pseudomonas sp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9600683)
+
+-------------------------------------
+
+Septoglomus constrictum + Solanum lycopersicum --> 1 occurrences
+References:
+ Discussion In our previous work, by comparing the effects of seven mycorrhizal species Rhizophagus irregularis, Funneliformis mosseae, Funneliformis geosporum, Funneliformis verruculosum, Funneliformis coronatum, Septoglomus deserticola, Septoglomus constrictum, we found that Septoglomus constrictum effectively enhanced tomato tolerance to drought and heat stress -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11359853)
+
+-------------------------------------
+
+Thermomyces lanuginosus + Cucumis sativus --> 1 occurrences
+References:
+ The fungal root endophyte Thermomyces lanuginosus was reported to improve the heat stress tolerance of Cucumis sativus plants by affecting photosynthetic parameters, water use efficiency and inducing antioxidant activities Ali et al., -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9828629)
+
+-------------------------------------
+
+Trichoderma longibrachiatum + Lanzhou lily --> 1 occurrences
+References:
+ Discussion TKs from Trichoderma longibrachiatum SMF2 enhanced tolerance to HS on Lanzhou lily HS is becoming one of the major limiting factors for food security due to global warming, so it is necessary to take effective measures to improve plant thermotolerance.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10282843)
+
+-------------------------------------
+
+Trichoderma longibrachiatum smf2 + Lanzhou lily --> 1 occurrences
+References:
+ Discussion TKs from Trichoderma longibrachiatum SMF2 enhanced tolerance to HS on Lanzhou lily HS is becoming one of the major limiting factors for food security due to global warming, so it is necessary to take effective measures to improve plant thermotolerance.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10282843)
+
+-------------------------------------
+
+Variovorax + Arabidopsis --> 1 occurrences
+References:
+ In this study, we demonstrate that Variovorax enhances Arabidopsis thermotolerance through yet unknown mechanisms which might be related to ethylene signaling.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10308788)
+
+-------------------------------------
+

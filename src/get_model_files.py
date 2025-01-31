@@ -32,18 +32,9 @@ def get_tsv_files(dataset_file, train_proportion):
         label = '1' if relation == 'YES' else '0'
         
         # Annotate entities in text
+        text = re.sub(fr'\b{microorganism}\b', f"<e1>{microorganism}</e1>", text, flags=re.IGNORECASE)
         text = re.sub(fr'\b{stress}\b', f"<e2>{stress}</e2>", text, flags=re.IGNORECASE)
         text = re.sub(fr'\b{plant}\b', f"<e3>{plant}</e3>", text, flags=re.IGNORECASE)
-
-        if '+' in microorganism:    # In case the instance refers to a combination of microorganisms, annotate them separately
-            combined_MOs = microorganism.split(' + ')
-            ch = "a"
-            for MO in combined_MOs:
-                text = re.sub(fr'\b{MO}\b', f"<e1{ch}>{MO}</e1{ch}>", text, flags=re.IGNORECASE)
-                ch = chr(ord(ch) + 1)
-
-        else:
-            text = re.sub(fr'\b{microorganism}\b', f"<e1>{microorganism}</e1>", text, flags=re.IGNORECASE)
         
         processed_rows.append([id, microorganism, stress, plant, text, label])
 
@@ -85,15 +76,14 @@ def get_tsv_files(dataset_file, train_proportion):
 def main():
     """Creates model training and testing files from checked dataset in .tsv format
 
-    :return: one .csv file for training and one .csv file for testing per id with relations between
+    :return: one .tsv file for training and one .tsv file for testing per id with relations between
       entities described as "YES" or "NO" for model training, and "TEST" for testing 
     """
     
-    original_dataset_file = os.path.join('dataset','SS_Dataset.txt')
-
-    os.system('mkdir -p model_data/tsv || true')
+    os.system('mkdir -p model_data || true')                    # dir for model files
+    original_dataset_file = os.path.join('2M-PAST','Checked_DS.txt')
     
-    # Default proportion of dataset allocated to training: 0.7
+    # Default proportion of total dataset allocated to training: 70% (30% allocated to testing)
     training_proportion = 0.7
 
     get_tsv_files(original_dataset_file, training_proportion)

@@ -30,7 +30,6 @@ def generate_abbreviations(taxa_file):
 
         patterns = [
         re.compile(r'\bfung\w*'),               # Matches words starting with "fung" (e.g., fungus, fungi)
-        re.compile(r'\w*virus\b'),              # Matches words ending with "virus" (e.g., coronavirus, retrovirus)
         re.compile(r'\byeast\w*'),              # Matches words starting with "yeast" (e.g., yeast, yeasts)
         re.compile(r'\bslime\w*'),              # Matches words starting with "slime" (e.g., slime, slimes)
         re.compile(r'\balgae\w*'),              # Matches words starting with "algae"
@@ -39,6 +38,7 @@ def generate_abbreviations(taxa_file):
         re.compile(r'\bgroup\w*'),              # Matches words starting with "group"
         re.compile(r'\bclade\w*'),              # Matches words starting with "clade"
         re.compile(r'\bsubtype\w*'),            # Matches words starting with "subtype"
+        re.compile(r'\w*virus\b'),              # Matches words ending with "virus" (e.g., coronavirus, retrovirus)
         re.compile(r'\bx\b'),                   # Matches lines with hybrid species
         re.compile(r'\S_\S'),                   # Matches lines with underscores
         ]
@@ -50,12 +50,11 @@ def generate_abbreviations(taxa_file):
 
             if (
                 len(parts) > 1
-                and len(parts) < 5
+                and len(parts) < 3
                 and parts[0].isalpha()
                 and parts[1].lower() not in ['sp.', 'cf.']
                 and parts[1].isalpha()
                 and not any(re.search(pattern, part.lower()) for pattern in patterns for part in parts)
-                and not any(len(part) > 15 for part in parts)
                 and ' '.join(parts[1:]).lower() != 'incertae sedis'
                 ):
                 abbreviation = f"{parts[0][0]}. {' '.join(parts[1:])}"
@@ -179,17 +178,18 @@ def run_mer(input_text, filename):
             results.append(result_string)
 
             if data_source == 'microorganisms':
-                list1 = [annotation for annotation_list in results for annotation in annotation_list if annotation != '']
+                list1 = [annotation for annotation_list in results for annotation in annotation_list if annotation != '' and not re.search(r'^\s+$', annotation)]
             elif data_source == 'stress':
-                list2 = [annotation for annotation_list in results for annotation in annotation_list if annotation != '']
+                list2 = [annotation for annotation_list in results for annotation in annotation_list if annotation != '' and not re.search(r'^\s+$', annotation)]
             elif data_source == 'plants':
-                list3 = [annotation for annotation_list in results for annotation in annotation_list if annotation != '']
+                list3 = [annotation for annotation_list in results for annotation in annotation_list if annotation != '' and not re.search(r'^\s+$', annotation)]
         else:
             with open(excluded_sentences_path, 'a', encoding='utf-8') as excluded_sentences:
                 excluded_sentences.write(f'[{filename}]|{input_text}\n')
             return original_annotations  # If input_text doesn't have all three types of entities, forgo annotation
 
-    
+
+
     # Tag annotations based on type of entity
     for annotation_MO in list1: # Microorganisms
 
@@ -212,7 +212,7 @@ def run_mer(input_text, filename):
         original_annotations.append((class_index_1, class_index_2, class_name, class_id, source_tag))
 
     for annotation_PL in list3: # Plants
-
+        
         class_index_1 = annotation_PL.split('\t')[0]
         class_index_2 = annotation_PL.split('\t')[1]
         class_name = annotation_PL.split('\t')[2]
@@ -230,7 +230,7 @@ def run_mer(input_text, filename):
 #         CREATING UNANNOTATED DATASET         #
 ################################################
 
-def create_dataset_entry(filename, annotations, text, destination_path, annotations_path):
+def create_dataset_entry(filename, annotations, text, destination_path, annotations_path, seen_entries):
     """Called by the create_dataset() function. Creates an entry to be added to the unannotated dataset. 
     Format: [PMCID] | [MICROORGANISM] | [STRESS] | [PLANT] | [SENTENCE] | [RELATION]
 
@@ -239,6 +239,7 @@ def create_dataset_entry(filename, annotations, text, destination_path, annotati
     :param text (str): input text
     :param destination_path (str): destination path for dataset file
     :param annotations_path (str): destination path for annotations files
+    :param seen_entries (set): entries already added to dataset (prevents duplicates)
     :return (yield) dataset_entries_count: number of entries added to dataset in cycle
     """
     
@@ -277,15 +278,18 @@ def create_dataset_entry(filename, annotations, text, destination_path, annotati
 
                         dataset_entry = f'{pmcid} | {microorganism} | {stress} | {plant} | {sentence} | {relation}'
 
-                        try:
-                            dataset_file.write(f'{dataset_entry}\n')
-                            dataset_entries_count +=1
-                            annotations.write(f'SENTENCE: {sentence}\nANNOTATIONS:\n{MO_annotation}\n{ST_annotation}\n{PL_annotation}\n----------\n')
+                        if dataset_entry not in seen_entries:
+                            try:
+                                dataset_file.write(f'{dataset_entry}\n')
+                                dataset_entries_count +=1
+                                annotations.write(f'SENTENCE: {sentence}\nANNOTATIONS:\n{MO_annotation}\n{ST_annotation}\n{PL_annotation}\n----------\n')
+                                seen_entries.add(dataset_entry)
 
-                        except:
-                            print(f"Error writing to dataset file!!!")
+                            except:
+                                print(f"Error writing to dataset file!!!")
     
     yield dataset_entries_count
+    yield seen_entries
 
 
 
@@ -318,6 +322,7 @@ def create_dataset(corpus_path, destination_path, annotations_path, abbreviation
     # Initialize number of files that produce no entries (to evaluate relevance of total articles in raw corpus)
     texts_no_entries = 0
     ids_no_entries = []
+    seen_entries = set()
 
     # Initialize dataset entries to obtain the number of instances in final dataset
     dataset_entries_count = 0
@@ -335,6 +340,12 @@ def create_dataset(corpus_path, destination_path, annotations_path, abbreviation
             entries_created = False
 
             complete_filename = os.path.join(dir_path,filename)
+            path_parts = os.path.split(dir_path)
+            stress_part = os.path.split(path_parts[0])
+            format = path_parts[1]
+            stress = stress_part[1]
+            annotations_directory = os.path.join(stress,format)
+            annotations_destination = os.path.join(annotations_path,annotations_directory)
 
             text = open(complete_filename, 'r', encoding = 'utf-8')
             text = (text.readlines())
@@ -350,7 +361,7 @@ def create_dataset(corpus_path, destination_path, annotations_path, abbreviation
             divided_text = divide_by_sentences(text)
             for sentence in divided_text:
 
-                if sentence != '' and not re.search("^Figure\\s\\d", sentence):
+                if not re.search(r'^\s+$', sentence) and not re.search(r'^Figure\s\d', sentence):
                     # Replace abbreviations in sentence
                     complete_sentence = replace_abbreviations_in_text(sentence, patterns, sorted_abbreviations, abbreviations_dict)
 
@@ -361,11 +372,12 @@ def create_dataset(corpus_path, destination_path, annotations_path, abbreviation
                     if final_annotations_list != []:
                         dataset_path = os.path.join(destination_path,'SS_Dataset.txt')
 
-                        if not os.path.exists(annotations_path):
-                            os.makedirs(annotations_path)
+                        if not os.path.exists(annotations_destination):
+                            os.makedirs(annotations_destination)
 
-                        result = create_dataset_entry(filename, final_annotations_list, complete_sentence, dataset_path, annotations_path)
+                        result = create_dataset_entry(filename, final_annotations_list, complete_sentence, dataset_path, annotations_destination, seen_entries)
                         dataset_entries_count +=int(next(result))
+                        seen_entries = next(result)
                         entries_created = True
             
             # If no dataset entries were produced from file
@@ -377,8 +389,9 @@ def create_dataset(corpus_path, destination_path, annotations_path, abbreviation
     print(f'Dataset is composed of {dataset_entries_count} entries.')
     print(f"Of {file_amount} files checked, {texts_no_entries} didn't produce any dataset entries.\n \
           Query relevance: {(1-(texts_no_entries/file_amount))*100} %")
-
-    with open('../../dataset/articles_no_entries.txt', 'w', encoding = 'utf-8') as file:
+    
+    no_entries_path = os.path.join('..','..','dataset','articles_no_entries.txt')
+    with open(no_entries_path, 'w', encoding = 'utf-8') as file:
         for id in ids_no_entries:
             file.write(f'{id}\n')
           
@@ -397,9 +410,11 @@ def get_dataset_full(corpus_path, dataset_file_path, annotations_directory):
     start_time = time.time() #--------------------------------------------------------------------------------- LOG: TIME
 
     # Get abbreviations dictionaries for microorganisms and plants and merge them into a single one
-    abbreviations_dict = generate_abbreviations('./data/microorganisms.txt')
+    MOs_path = os.path.join('data','microorganisms.txt')
+    abbreviations_dict = generate_abbreviations(MOs_path)
 
-    dict_to_merge = generate_abbreviations('./data/plants.txt')
+    PLs_path = os.path.join('data','plants.txt')
+    dict_to_merge = generate_abbreviations(PLs_path)
     abbreviations_dict.update(dict_to_merge)    # Final dictionary with all abbreviations
 
     print(f'RUNTIME: {time.time() - start_time:.1f} seconds') #----------------------------------------------- LOG: TIME

@@ -1,0 +1,167 @@
+
+** MICROORGANISM + PLANT COMBINATIONS FOR COLD STRESS **
+
+Bacillus + Triticum aestivum --> 6 occurrences
+References:
+ Effect of Bacterial Isolates on Photosynthetic Potential of Plants Under Cold Stress The photosynthetic activity and stomatal conductance measured for wheat plants under cold stress and at regular temperature under four bacterial treatments showed that photosynthesis rate was significantly enhanced in plants treated with Bacillus sp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6780275)
+ The inoculated strains CJCL2 and RJGP41 were also able to upregulate the expression levels of genes responsible for producing important plant growth hormones such cytokinin CKX2, auxin ARF, alpha expansin exPA1, and ethylene ERF under cold stress whereas all three Bacillus strains showed up-regulation in the genes of these phytohormones at optimum temperature for wheat growth.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6780275)
+ The inoculated cold tolerant Bacillus strains also aided in inducing stress response in wheat by regulating abscisic acid, lipid peroxidation and proline accumulation pathways in a beneficial manner.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6780275)
+ To the best of our knowledge, the present study is the first report for the alleviation of cold stress in wheat plants by the inoculation of psychrophilic Bacillus spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6780275)
+ Pseudomonas and Bacillus strains are well documented to have positive effect on vigor index and root morphological parameters of seedlings and young plants -REF-, -REF- but in present study we report significant improvement in vigor index and root morphological parameters of wheat seedlings as well as wheat plants under cold stress by the inoculation of psychrophilic Bacillus CJCL2 and RJGP41.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6780275)
+ The phytohormone i.e., cytokinin, auxin and expansin related genes is also up-regulated by the inoculation of PGPR as reported by -REF- and the ethylene gene is reported to be down-regulated -REF-, The expression pattern also conforms to our results as well But to the best of our knowledge, the present study is the first report of transcriptional regulation of these phytohormone genes in wheat plants under cold stress induced by inoculated Bacillus strains CJCL2 and RJGP41.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6780275)
+
+-------------------------------------
+
+Burkholderia phytofirmans + Vitis vinifera --> 6 occurrences
+References:
+ Reports suggest that the endophytic bacteria Burkholderia phytofirmans strain PsJN can alter photosynthesis and the carbohydrate metabolism involved in chilling stress, thereby enhancing the cold tolerance of grapevine plants -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9600683)
+ Epichloe gansuensis increased the biosynthesis of alkaloids and unsaturated fatty acids during the seed germination of Achnatherum inebrians, thereby increasing tolerance to cold stress -REF-, while Burkholderia phytofirmans induced the upregulation of some cold stress-related genes by Vitis vinifera -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8828500)
+ Another example is the bacterium Burkholderia phytofirmans that makes the host plant resilient to multiple stressors, such as improving tolerance to cold in grapevine, heat in tomato, drought in wheat, and salt and freezing in Arabidopsis -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9866067)
+ Inoculation of Burkholderia phytofirmans increased grapevine growth and starch, proline, and phenolic contents at a low temperature -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8072474)
+ The same bacteria, Burkholderia phytofirmans PsJN, when inoculated with cold-stressed grapevine Vitis vinifera, lowered biomass reduction and electrolyte leakage from membranes -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9415082)
+ As previous works have noted, cold stress 4 °C induces more carbohydrate accumulations such as starch, glucose, fructose, sucrose, mannose, raffinose and maltose, in grapevine inoculated with Burkholderia phytofirmans than in grapevine non-inoculated -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8759379)
+
+-------------------------------------
+
+Burkholderia phytofirmans psjn + Vitis vinifera --> 3 occurrences
+References:
+ In other studies, Burkholderia phytofirmans PsJN could tolerate cold stress by inducing high concentration of total reducing sugars, glucose, and proline on bacterization of grapevine -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
+ The same bacteria, Burkholderia phytofirmans PsJN, when inoculated with cold-stressed grapevine Vitis vinifera, lowered biomass reduction and electrolyte leakage from membranes -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9415082)
+ The same bacteria, Burkholderia phytofirmans PsJN, when inoculated with cold-stressed grapevine Vitis vinifera, lowered biomass reduction and electrolyte leakage from membranes -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9415082)
+
+-------------------------------------
+
+Pseudomonas + Triticum aestivum --> 3 occurrences
+References:
+ Bacterization of wheat with psychrotolerant Pseudomonas at cold temperature alleviated cold stress by improving chlorophyll, anthocyanin, free proline, total phenolics, starch content, physiologically available iron, proteins, and amino acids.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
+ Likewise, increased cold tolerance was observed in wheat seedlings when treated with Pseudomonas sp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9634556)
+ One study has shown that inoculation with Pseudomonas strains significantly enhances root/shoot biomass, relative water content, chlorophyll, anthocyanin, proline, proteins, and amino acids, which are adaptations to cold stress in wheat -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8759379)
+
+-------------------------------------
+
+Funneliformis mosseae + Triticum aestivum --> 2 occurrences
+References:
+ Funneliformis mosseae could enhance chlorophyll concentration of tomato leaves at low temperature, which was in agreement with the results of wheat and maize under cold stress by Paradis et al.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8071382)
+ Funneliformis mosseae could enhance chlorophyll concentration of tomato leaves at low temperature, which was in agreement with the results of wheat and maize under cold stress by Paradis et al.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8071382)
+
+-------------------------------------
+
+Funneliformis mosseae + Zea mays --> 2 occurrences
+References:
+ Funneliformis mosseae could enhance chlorophyll concentration of tomato leaves at low temperature, which was in agreement with the results of wheat and maize under cold stress by Paradis et al.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8071382)
+ Funneliformis mosseae could enhance chlorophyll concentration of tomato leaves at low temperature, which was in agreement with the results of wheat and maize under cold stress by Paradis et al.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8071382)
+
+-------------------------------------
+
+Funneliformis mosseae + Solanum lycopersicum --> 2 occurrences
+References:
+ Funneliformis mosseae could enhance chlorophyll concentration of tomato leaves at low temperature, which was in agreement with the results of wheat and maize under cold stress by Paradis et al.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8071382)
+ Funneliformis mosseae could enhance chlorophyll concentration of tomato leaves at low temperature, which was in agreement with the results of wheat and maize under cold stress by Paradis et al.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8071382)
+
+-------------------------------------
+
+Bacillus velezensis + Triticum aestivum --> 2 occurrences
+References:
+ -REF- reported plant growth-promoting rhizospheric strain Bacillus velezensis 5113 inoculation resulted in a metabolic modulation and involvement of many regulatory proteins in wheat leaves to develop heat, cold and drought stress tolerance.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
+ Previously, we showed that Bacillus velezensis UCMB5113 was able to improve wheat tolerance against heat, cold and drought stress conditions -REF-, -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6841942)
+
+-------------------------------------
+
+Rhizophagus irregularis + Digitaria eriantha --> 2 occurrences
+References:
+ For instance, -REF- found that the application of AMF Rhizophagus irregularis improved the physiological performance of Digitaria eriantha under drought, salinity, and cold stresses through the upregulation of antioxidant enzyme activity e.g., CAT and APX and jasmonate synthesis.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7691295)
+ -REF- showed an increase in antioxidants in the shoots and roots of Digitaria eriantha and a reduction in cellular lipid peroxidation in plants inoculated with the arbuscular mycorrhizal fungus Rhizophagus irregularis under cold stress 4 °C.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8234610)
+
+-------------------------------------
+
+Sphingomonas + Solanum lycopersicum --> 2 occurrences
+References:
+ The Sphingomonas species were more abundant in leaf and root compartments in Si and Si+Cold treatments and have also been reported previously for enhancing cold stress tolerance in tomato plants -REF-; -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10805835)
+ The Sphingomonas species were more abundant in leaf and root compartments in Si and Si+Cold treatments and have also been reported previously for enhancing cold stress tolerance in tomato plants -REF-; -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10805835)
+
+-------------------------------------
+
+Bacillus velezensis ucmb5113 + Triticum aestivum --> 1 occurrences
+References:
+ Previously, we showed that Bacillus velezensis UCMB5113 was able to improve wheat tolerance against heat, cold and drought stress conditions -REF-, -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6841942)
+
+-------------------------------------
+
+Brevibacterium + Phaseolus vulgaris --> 1 occurrences
+References:
+ Different bacterial species, such as Pseudomonas fragi, P. chloropaphis, Pseudomonas fluorescens, Pseudomonas proteolytica, and Brevibacterium frigoritolerans, have been observed reducing freezing injuries and the content of lipid peroxides and ROS while stimulating some enzymatic activity superoxide dismutase, catalase, peroxidase, and glutathione reductase that could improve tolerance against cold stress in common bean seedlings -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10222584)
+
+-------------------------------------
+
+Epichloe gansuensis + Achnatherum inebrians --> 1 occurrences
+References:
+ Epichloe gansuensis increased the biosynthesis of alkaloids and unsaturated fatty acids during the seed germination of Achnatherum inebrians, thereby increasing tolerance to cold stress -REF-, while Burkholderia phytofirmans induced the upregulation of some cold stress-related genes by Vitis vinifera -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8828500)
+
+-------------------------------------
+
+Burkholderia + Glycine max --> 1 occurrences
+References:
+ The abundance of Burkholderia in cold stress with and without silicon explains its role in promoting cold tolerance in soybean plants.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10805835)
+
+-------------------------------------
+
+Glomus + Oryza sativa --> 1 occurrences
+References:
+ An interesting arbuscular mycorrhizal fungus Glomus intraradices-mediated molecular mechanism, regulates root water uptake in rice under cold stress, and involves trehalose as a signalling molecule Liu et al.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9213282)
+
+-------------------------------------
+
+Pantoea dispersa + Triticum aestivum --> 1 occurrences
+References:
+ Similarly, the cold-tolerant PGPR Pantoea dispersa was able to improve cold tolerance in wheat by enhancing nutrient solubilization and higher production of IAA -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8773105)
+
+-------------------------------------
+
+Paraburkholderia phytofirmans + Vitis vinifera --> 1 occurrences
+References:
+ Inoculation with PGPB can reduce the damaging effects of salt or drought stress by increasing the levels of trehalose in plants -REF-, and interestingly in grapevine, the beneficial effects of Paraburkholderia phytofirmans strain PsJN against cold stress seemed also to be related to an increase on trehalose metabolism -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11413592)
+
+-------------------------------------
+
+Pantoea dispersa + Wheat --> 1 occurrences
+References:
+ Wheat seedlings inoculated with bacteria such as Pantoea dispersa 1A and Serratia marcescens SRM strains which produce IAA, exhibited considerably better nutrient and yield absorption ability than control when cultivated under cold conditions -REF-; -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9634556)
+
+-------------------------------------
+
+Pseudomonas fluorescens + Phaseolus vulgaris --> 1 occurrences
+References:
+ Different bacterial species, such as Pseudomonas fragi, P. chloropaphis, Pseudomonas fluorescens, Pseudomonas proteolytica, and Brevibacterium frigoritolerans, have been observed reducing freezing injuries and the content of lipid peroxides and ROS while stimulating some enzymatic activity superoxide dismutase, catalase, peroxidase, and glutathione reductase that could improve tolerance against cold stress in common bean seedlings -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10222584)
+
+-------------------------------------
+
+Pseudomonas fragi + Phaseolus vulgaris --> 1 occurrences
+References:
+ Different bacterial species, such as Pseudomonas fragi, P. chloropaphis, Pseudomonas fluorescens, Pseudomonas proteolytica, and Brevibacterium frigoritolerans, have been observed reducing freezing injuries and the content of lipid peroxides and ROS while stimulating some enzymatic activity superoxide dismutase, catalase, peroxidase, and glutathione reductase that could improve tolerance against cold stress in common bean seedlings -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10222584)
+
+-------------------------------------
+
+Pseudomonas vancouverensis + Solanum lycopersicum --> 1 occurrences
+References:
+ Inoculation of the tomato plants subjected to low temperatures with P. frederiksbergensis OS261 and Pseudomonas vancouverensis OB155 increased the expression of antioxidant activity and cold acclimation genes in leaf tissues -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7536804)
+
+-------------------------------------
+
+Pseudomonas proteolytica + Phaseolus vulgaris --> 1 occurrences
+References:
+ Different bacterial species, such as Pseudomonas fragi, P. chloropaphis, Pseudomonas fluorescens, Pseudomonas proteolytica, and Brevibacterium frigoritolerans, have been observed reducing freezing injuries and the content of lipid peroxides and ROS while stimulating some enzymatic activity superoxide dismutase, catalase, peroxidase, and glutathione reductase that could improve tolerance against cold stress in common bean seedlings -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10222584)
+
+-------------------------------------
+
+Serratia marcescens + Wheat --> 1 occurrences
+References:
+ Wheat seedlings inoculated with bacteria such as Pantoea dispersa 1A and Serratia marcescens SRM strains which produce IAA, exhibited considerably better nutrient and yield absorption ability than control when cultivated under cold conditions -REF-; -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9634556)
+
+-------------------------------------
+
+Trichoderma harzianum + Solanum lycopersicum --> 1 occurrences
+References:
+ Trichoderma harzianum was also able to alter the expression of transcription factor NAC1 and dehydrin TAS14 genes, leading to cold tolerance in tomato plants -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8072474)
+
+-------------------------------------
+

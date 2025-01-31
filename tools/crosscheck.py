@@ -7,7 +7,7 @@ import os
 #########################################################
 
 
-with open('checked_dataset/Checked_DS.txt', 'r', encoding='utf-8') as dataset:
+with open('2M-PAST/Checked_DS.txt', 'r', encoding='utf-8') as dataset:
     lines = dataset.readlines()
 
 D_microorganisms = set()

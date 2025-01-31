@@ -1,4 +1,5 @@
 import os
+import re
 import time
 
 
@@ -16,7 +17,7 @@ def parse_synonyms_file(file_path):
     """
 
     with open(file_path, 'r', encoding = 'utf-8') as file:
-        stress_mapping = {}
+        synonyms_mapping = {}
         main_term = None
         synonyms = []
 
@@ -25,20 +26,24 @@ def parse_synonyms_file(file_path):
 
             if line == '-':  # If line is '-', reset for the next block
                 if main_term and synonyms:
-                    stress_mapping[main_term] = synonyms
-                    main_term = None
-                    synonyms = []
+                    synonyms_mapping[main_term] = synonyms
+                main_term = None
+                synonyms = []
+
+            elif re.search(r'\S\sx\s\S', line) or re.search(r'hybrid',line): # Hybrids won't be considered for synonym mapping (ex: Magnolia baillonii x Magnolia champaca)
+                continue
 
             elif not main_term:  # The first line before '-' is the main term
                 main_term = line
+
             else:  # Following lines until '-' are synonyms
                 synonyms.append(line)
 
         # Add the last main term and its synonyms after exiting the loop
         if main_term and synonyms:
-            stress_mapping[main_term] = synonyms
+            synonyms_mapping[main_term] = synonyms
 
-    return stress_mapping
+    return synonyms_mapping
 
 
 
@@ -57,9 +62,9 @@ def get_pmcids_list(file_path):
     # Define keywords for querying    # ----------------------------------------------------------- CHANGEABLE
     ### ATTENTION:'AND' and 'OR' statements MUST be written inside the same string
     query_keywords = [
-    "((microbe[All Fields]) OR (microorganism[All Fields] OR (Microbial Interactions[MeSH]) NOT (gut microbiome[All Fields])))",
+    "((microb*[All Fields]) OR (microorganism[All Fields] OR (Microbial Interactions[MeSH]) NOT (gut microbiome[All Fields])))",
     "((plant stress[All Fields]) OR (plant abiotic stress[All Fields]) OR (Stress, Physiological[MeSH]))",
-    "(tolerance[All Fields] OR (Plant Roots/microbiology[MeSH]) OR (Plant Shoots/microbiology[MeSH]) NOT (drug tolerance[All Fields]))"
+    "((toleran*[All Fields] OR resilien*[All Fields]) OR (Plant Roots/microbiology[MeSH] OR Plant Shoots/microbiology[MeSH]) NOT (drug tolerance[All Fields]))"
     ]   
 
     print(f'QUERY KEYWORDS: [stress type] + {(" + ".join(query_keywords))}\n-----------------------------------------')

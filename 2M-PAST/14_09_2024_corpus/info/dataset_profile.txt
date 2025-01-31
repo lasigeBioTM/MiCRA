@@ -1,0 +1,63 @@
+RELATION
+YES         1505
+NO          1213
+Name: count, dtype: int64        
+
+RELATION FREQUENCY         
+Positive (relation found): 55.4%        
+Negative (relation not found): 44.6%
+
+------------------------------------------                
+
+STRESS  
+Salt        1365
+Drought     1119
+Heat         156
+Cold          78
+Name: count, dtype: int64        
+
+STRESS FREQUENCY         
+Salt stress: 50.2%        
+Drought stress: 41.2%        
+Heat stress: 5.7%        
+Cold stress: 2.9%                
+
+Top 15 Microorganisms in Dataset and # of Occurrences in Dataset:         
+MICROORGANISM               
+Bacillus                        143
+Pseudomonas                     133
+Azospirillum brasilense          82
+Pseudomonas putida               63
+Bacillus subtilis                53
+Bacillus amyloliquefaciens       46
+Pseudomonas fluorescens          43
+Trichoderma longibrachiatum      43
+Burkholderia phytofirmans        41
+Trichoderma harzianum            38
+Dermacoccus abyssi               36
+Bacillus megaterium              36
+Actinobacteria                   36
+Bacillus cereus                  32
+Enterobacter cloacae             31
+Name: count, dtype: int64
+
+------------------------------------------        
+
+Top 15 Plants in Dataset and # of Occurrences in Dataset:         
+PLANT                
+Triticum aestivum        432
+Zea mays                 314
+Oryza sativa             308
+Solanum lycopersicum     238
+Glycine max              107
+Arabidopsis               93
+Hordeum vulgare           52
+Cicer arietinum           51
+Arabidopsis thaliana      50
+Medicago sativa           46
+Cucumis sativus           44
+Pinus massoniana          42
+Pepper                    32
+Solanum tuberosum         31
+Sugarcane                 26
+Name: count, dtype: int64
