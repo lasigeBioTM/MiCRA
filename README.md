@@ -1,15 +1,11 @@
-## Repository for Thesis Project entitled "MiCRA: a minimal pipeline for functional microbiome information retrieval using Natural Language Processing and Biomedical Ontologies"
+# "MiCRA: a minimal pipeline for functional microbiome information retrieval using Natural Language Processing and Biomedical Ontologies"
+## Repository for Thesis Project
 
 Student: Madalena Girão
 
 Supervisor: Francisco Couto
 
 Co-supervisor: Ana Margarida Fortes
-
-```bash
-# Creates dataset information files inside info/
-*python3* src/datasetProfile.py
-```
 
 ### Abstract:
 Abiotic stresses, such as drought and salinity, pose significant challenges to modern agriculture, threatening global food security amid increasing climate variability. Microbial communities, particularly those associated with plants and crops, offer a promising approach for mitigating the impacts of these stresses. This dissertation introduces MiCRA (Microbial Communities for Regenerative Agriculture), an innovative natural language processing pipeline designed to extract, process, and organize knowledge about microbe-mediated stress tolerance in plants. The system combines text mining techniques and the NCBI Organismal Taxonomy Ontology to generate robust datasets, capturing relationships between microorganisms, plants, and stresses from biomedical literature. The primary goal is to empower researchers to explore sustainable, microbe-based regenerative agriculture solutions for enhancing plant resilience to various types of abiotic stress.
@@ -27,91 +23,158 @@ Bayer Digital Campus Challenge 2023 (Data-Driven Farming)
 ### Important References:
 Sousa, D., Lamurias, A., and Couto, F. M. (2019). A silver standard corpus of human phenotype-gene relations. NAACL HLT 2019 - 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies - Proceedings of the Conference, 1:1487–1492 (https://aclanthology.org/N19-1152/)
 
-
-## PIPELINE
-
-**HOME DIRECTORY: ~/MiCRA**
-
-**Required packages: pandas, owlready2, nltk**
-
-1. Add ‘classes_microorganisms.txt’ and ‘classes_plants.txt’ to directory ./bin/MER
-
-**Required format for each file: [CLASS NAME] | [CLASS IRI]**
-
-```
-Chlorarachniophyceae | http://purl.obolibrary.org/obo/NCBITaxon_29197
-Cryptophyceae | http://purl.obolibrary.org/obo/NCBITaxon_3027
-Dinophyceae | http://purl.obolibrary.org/obo/NCBITaxon_2864
-Glaucocystophyceae | http://purl.obolibrary.org/obo/NCBITaxon_38254
-Haptophyta | http://purl.obolibrary.org/obo/NCBITaxon_2608109
-Ochrophyta | http://purl.obolibrary.org/obo/NCBITaxon_2696291
-Rhodophyta | http://purl.obolibrary.org/obo/NCBITaxon_2763
-Viridiplantae | http://purl.obolibrary.org/obo/NCBITaxon_33090
-```
-
 ---
 
-2. Create directory for MER files and produce them
+## Dependencies
+
+* Python = 3.9
+  
+* Pre-processing:
+    * [Natural Language Toolkit](https://www.nltk.org/)
+    * [Owlready2](https://owlready2.readthedocs.io/en/v0.47/)
+    
+* Term Recognition:
+    * [MER (Minimal Named-Entity Recognizer)](https://github.com/lasigeBioTM/MER)
+    * [NCBI Organismal Classification Ontology](https://bioportal.bioontology.org/ontologies/NCBITAXON)
+      
+* Data Visualization:
+    * [Jupyter](https://jupyter.org/)
+    * [Pandas](https://pandas.pydata.org/docs/getting_started/overview.html)
+    * [NetworkX](https://networkx.org/)
+
+## Getting Started
+
+```bash
+ cd bin/
+ git clone git@github.com:lasigeBioTM/MER.git
+```
+
+### Creating lexicons
 
 ```bash
 python3 ./bin/produce_data_files_classes.py | tee logfiles/01_lexicon_creation.txt
 ```
 
----
 
-3. Crosscheck dataset plant and microorganism entities between ground truth dataset and extracted classes in MER files (OPTIONAL)
+
+### Crosschecking entities (OPTIONAL)
 
 ```bash
 python3 tools/crosscheck.py | tee logfiles/02_crosscheck.txt
 ```
 
----
+## Usage
 
-4. Get PMCIDs for each stress term in MER stress lexicon
+### Get PubMed Central (PMC) IDs
 
 ```bash
 python3 src/get_pmcids.py | tee logfiles/03_get_pmcids.txt
 ```
+Creates a text file for each stress type containing the retrieved PMCIDs.
 
----
 
-5. Create raw corpus from every article in PMCID list files
-
+### Extract articles
 ```bash
 python3 src/write_files.py | tee logfiles/04_write_files.txt
 ```
+Takes every PMCID and extracts the corresponding article, retrieving textual information and ignoring tables, figures and supplemental data.
 
----
-
-6. Create unannotated dataset
+### Get raw dataset
 
 ```bash
 python3 src/get_raw_dataset.py | tee logfiles/05_get_raw_dataset.txt
 ```
+Processes every article to obtain dataset entries pertaining to microorganism-stress-plant relations based on entity co-occurrence at sentence-level.
 
----
 
-7. Review relations in dataset - manually or with script
+### Review relations in dataset (Use of script is OPTIONAL)
 
 ```bash
 python3 src/check_relations.py
 ```
+A terminal-based tool for validating dataset entries which relies on user input, and ultimately creates a final, curated *corpus*.
 
----
 
-8. Get dataset features and combinations info (OPTIONAL)
+### Get dataset features and combinations info (OPTIONAL)
 
 ```bash
-# Creates dataset information files inside info/ and final dataset with handled synonyms inside dataset/
-python3 src/datasetProfile.py
+python3 src/dataset_profile.py
 ```
+Creates a text file with dataset features (positive-negative instance ratio, most common entities for each type, etc), and separate files for the most combinations of entities.
+* Creates: 
+    * **info/dataset_profile.txt** 
+    * **info/combinations_ALL.txt**
+    * **info/combinations_cold.txt** 
+    * **info/combinations_drought.txt**
+    * **info/combinations_heat.txt**
+    * **info/combinations_salt.txt**
 
----
 
-9. Get .csv files with annotated entities for model development (OPTIONAL)
+### Create model files (OPTIONAL)
 
 ```bash
 python3 src/get_model_files.py
 ```
+Creates annotated .tsv files for model development (training and testing) after handling entitiy synonymy.
 
----
+## Configuration
+
+* ### bin/
+    * **MER/**
+        * **data/**
+            * __stress_links.tsv__
+            * __stress_synonyms.txt__
+            * __stress_word1.txt__
+            * __stress_word2.txt__
+            * __stress_words.txt__
+            * __stress_words2.txt__
+    * **nltk_data/**
+    * *classes_microorganisms.txt*
+    * *classes_plant.txt*
+    * **produce_data_files_classes.py**
+    
+* ### 2M-PAST/
+    * **14_09_2024_corpus/**
+        * **info/**
+            * **combinations_ALL.txt**
+            * **combinations_cold.txt**
+            * **combinations_drought.txt**
+            * **combinations_heat.txt**
+            * **combinations_salt.txt**
+            * **dataset_profile.txt**
+        * **instance_types**
+            * **dataset_negatives.txt**
+            * **dataset_positives.txt**
+            * **NO_combination.txt**
+            * **NO_mixedEntities.txt**
+            * **NO_mutants.txt**
+            * **NO_norelation.txt**
+            * **NO_products.txt**
+            * **NO_relation2.txt**
+            * **YES_context.txt**
+            * **YES_direct.txt**
+            * **YES_indirect.txt**
+        * **model_data**
+            * **2mpast_test.tsv**
+            * **2mpast_train.tsv**
+        * __Checked_DS.txt__
+  
+          
+
+* ### GTD/
+    * __article_list.csv__
+    * __GTD.txt__
+    
+* ### src/
+    * **check_relations.py**
+    * **dataset_profile.py**
+    * **get_model_files.py**
+    * **get_pmcids.py**
+    * **get_raw_dataset.py**
+    * **write_files.py**
+
+* ### tools/
+    * **crosscheck.py**
+    * **knowledge_graph.ipynb**
+    * **word_frequency.ipynb**
+  

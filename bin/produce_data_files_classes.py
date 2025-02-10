@@ -502,10 +502,8 @@ print("---------------------------\n  CREATING LEXICON FILES\n------------------
 #########################################################
 
 MER_data_path = os.path.join('bin','MER','data')
-logfiles_path = 'logfiles'
 
 os.makedirs(MER_data_path, exist_ok=True) # dir for lexicon text files
-os.makedirs(logfiles_path,exist_ok=True) # dir for logfiles text files
 
 # Load the ontology
 start_time = time.time() #----------------------------------------------------------------------------------------------- LOG: TIME
@@ -516,8 +514,9 @@ print(f'\nLoading ontology runtime: {end_time - start_time:8.1f} seconds\n------
 
 data_sources = ['microorganisms', 'plants']         # Stress lexicon files were manually created
 
+start_time = time.time() #----------------------------------------------------------------------------------------------- LOG: TIME
+
 for data_type in data_sources:
-    start_time = time.time() #----------------------------------------------------------------------------------------------- LOG: TIME
 
     print(f'\n** {data_type.title()} lexicon data **\n')
 
@@ -551,10 +550,12 @@ for data_type in data_sources:
     split_labels_into_files(output_labels_file, filename)
     tsv_links_file(output_links_file)
 
-    print(f"\n{data_type.capitalize()} lexicon files have been created at bin/MER/data")
-
     labels_file.close()
     links_file.close()
-    end_time = time.time() #----------------------------------------------------------------------------------------------- LOG: TIME
 
-    print(f'RUNTIME: {end_time - start_time:8.1f} seconds\n----------------------------------------') #-------------------- LOG: INFO
+
+print(f"\nLexicon files have been created at bin/MER/data")
+
+end_time = time.time() #----------------------------------------------------------------------------------------------- LOG: TIME
+
+print(f'RUNTIME: {end_time - start_time:8.1f} seconds\n----------------------------------------') #-------------------- LOG: INFO
