@@ -1,11 +1,12 @@
-# "MiCRA: a minimal pipeline for functional microbiome information retrieval using Natural Language Processing and Biomedical Ontologies"
+# MiCRA: a minimal pipeline for functional microbiome information retrieval using Natural Language Processing and Biomedical Ontologies
+
 ## Repository for Thesis Project
 
-Student: Madalena Girão
+**Student:** Madalena Girão
 
-Supervisor: Francisco Couto
+**Supervisor:** Francisco Couto
 
-Co-supervisor: Ana Margarida Fortes
+**Co-supervisor:** Ana Margarida Fortes
 
 ### Abstract:
 Abiotic stresses, such as drought and salinity, pose significant challenges to modern agriculture, threatening global food security amid increasing climate variability. Microbial communities, particularly those associated with plants and crops, offer a promising approach for mitigating the impacts of these stresses. This dissertation introduces MiCRA (Microbial Communities for Regenerative Agriculture), an innovative natural language processing pipeline designed to extract, process, and organize knowledge about microbe-mediated stress tolerance in plants. The system combines text mining techniques and the NCBI Organismal Taxonomy Ontology to generate robust datasets, capturing relationships between microorganisms, plants, and stresses from biomedical literature. The primary goal is to empower researchers to explore sustainable, microbe-based regenerative agriculture solutions for enhancing plant resilience to various types of abiotic stress.
@@ -47,6 +48,7 @@ Sousa, D., Lamurias, A., and Couto, F. M. (2019). A silver standard corpus of hu
 ```bash
  cd bin/
  git clone git@github.com:lasigeBioTM/MER.git
+ wget https://purl.obolibrary.org/obo/ncbitaxon.owl
 ```
 
 ### Creating lexicons
@@ -55,13 +57,14 @@ Sousa, D., Lamurias, A., and Couto, F. M. (2019). A silver standard corpus of hu
 python3 ./bin/produce_data_files_classes.py | tee logfiles/01_lexicon_creation.txt
 ```
 
-
+Generates lexicon files for microorganism and plant entities (stress entity lexicon was manually created and already exists in ./bin/MER/data/)
 
 ### Crosschecking entities (OPTIONAL)
 
 ```bash
 python3 tools/crosscheck.py | tee logfiles/02_crosscheck.txt
 ```
+Checks if all entities in the Ground Truth Dataset (GTD) were retrieved from the ontology by the lexicon creation script (for entity recognition optimization).
 
 ## Usage
 

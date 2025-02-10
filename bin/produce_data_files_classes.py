@@ -507,7 +507,7 @@ os.makedirs(MER_data_path, exist_ok=True) # dir for lexicon text files
 
 # Load the ontology
 start_time = time.time() #----------------------------------------------------------------------------------------------- LOG: TIME
-ontology_path = os.path.join('.','bin','ncbitaxon.owl')               ### CHANGEABLE: Ontology file you're using ###
+ontology_path = os.path.join('ncbitaxon.owl')               ### CHANGEABLE: Ontology file you're using ###
 ontology = get_ontology(ontology_path).load()
 end_time = time.time() #------------------------------------------------------------------------------------------------- LOG: TIME
 print(f'\nLoading ontology runtime: {end_time - start_time:8.1f} seconds\n----------------------------------------') #--- LOG: INFO
