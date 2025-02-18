@@ -1,4 +1,3 @@
-import re
 import os
 
 
@@ -6,8 +5,9 @@ import os
 #                  GET RELEVANT STATS                   #
 #########################################################
 
+checked_dataset_path = os.path.join("2M-PAST","14_09_2024_corpus","Checked_DS.txt")
 
-with open('2M-PAST/Checked_DS.txt', 'r', encoding='utf-8') as dataset:
+with open(checked_dataset_path, 'r', encoding='utf-8') as dataset:
     lines = dataset.readlines()
 
 D_microorganisms = set()
