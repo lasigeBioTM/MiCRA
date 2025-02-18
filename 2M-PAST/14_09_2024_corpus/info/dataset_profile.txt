@@ -1,63 +1,63 @@
 RELATION
-YES         1505
-NO          1213
+YES         1391
+NO          1074
 Name: count, dtype: int64        
 
 RELATION FREQUENCY         
-Positive (relation found): 55.4%        
-Negative (relation not found): 44.6%
+Positive (relation found): 56.4%        
+Negative (relation not found): 43.6%
 
 ------------------------------------------                
 
 STRESS  
-Salt        1365
-Drought     1119
-Heat         156
-Cold          78
+Salt        1199
+Drought     1040
+Heat         153
+Cold          73
 Name: count, dtype: int64        
 
 STRESS FREQUENCY         
-Salt stress: 50.2%        
-Drought stress: 41.2%        
-Heat stress: 5.7%        
-Cold stress: 2.9%                
+Salt stress: 48.6%        
+Drought stress: 42.2%        
+Heat stress: 6.2%        
+Cold stress: 3.0%                
 
 Top 15 Microorganisms in Dataset and # of Occurrences in Dataset:         
 MICROORGANISM               
-Bacillus                        143
-Pseudomonas                     133
-Azospirillum brasilense          82
-Pseudomonas putida               63
-Bacillus subtilis                53
+Pseudomonas                     121
+Bacillus                        117
+Azospirillum brasilense          75
+Pseudomonas putida               62
+Bacillus subtilis                49
 Bacillus amyloliquefaciens       46
-Pseudomonas fluorescens          43
-Trichoderma longibrachiatum      43
 Burkholderia phytofirmans        41
-Trichoderma harzianum            38
-Dermacoccus abyssi               36
-Bacillus megaterium              36
-Actinobacteria                   36
+Pseudomonas fluorescens          41
+Trichoderma longibrachiatum      40
+Dermacoccus abyssi               34
+Actinobacteria                   34
+Trichoderma harzianum            32
+Bacillus megaterium              32
 Bacillus cereus                  32
-Enterobacter cloacae             31
+Trichoderma                      29
 Name: count, dtype: int64
 
 ------------------------------------------        
 
 Top 15 Plants in Dataset and # of Occurrences in Dataset:         
 PLANT                
-Triticum aestivum        432
-Zea mays                 314
-Oryza sativa             308
-Solanum lycopersicum     238
-Glycine max              107
-Arabidopsis               93
-Hordeum vulgare           52
-Cicer arietinum           51
-Arabidopsis thaliana      50
-Medicago sativa           46
-Cucumis sativus           44
+Triticum aestivum        386
+Oryza sativa             288
+Zea mays                 279
+Solanum lycopersicum     213
+Glycine max               97
+Arabidopsis               86
+Cicer arietinum           49
+Hordeum vulgare           47
+Arabidopsis thaliana      43
 Pinus massoniana          42
-Pepper                    32
-Solanum tuberosum         31
-Sugarcane                 26
+Cucumis sativus           39
+Medicago sativa           39
+Solanum tuberosum         28
+Vitis vinifera            25
+Pepper                    25
 Name: count, dtype: int64
