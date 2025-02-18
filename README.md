@@ -54,6 +54,7 @@ Sousa, D., Lamurias, A., and Couto, F. M. (2019). A silver standard corpus of hu
 ### Creating lexicons
 
 ```bash
+mkdir logfiles || True
 python3 ./bin/produce_data_files_classes.py | tee logfiles/01_lexicon_creation.txt
 ```
 
