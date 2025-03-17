@@ -62,7 +62,7 @@ def get_pmcids_list(file_path):
     # Define keywords for querying    # ----------------------------------------------------------- CHANGEABLE
     ### ATTENTION:'AND' and 'OR' statements MUST be written inside the same string
     query_keywords = [
-    "((microb*[All Fields]) OR (microorganism[All Fields] OR (Microbial Interactions[MeSH]) NOT (gut microbiome[All Fields])))",
+    "((microb*[All Fields]) OR (microorganism[All Fields] OR (Microbiota[MeSH]) OR (Mycobiome[MeSH]) NOT (gut microbiome[All Fields])))",
     "((plant stress[All Fields]) OR (plant abiotic stress[All Fields]) OR (Stress, Physiological[MeSH]))",
     "((toleran*[All Fields] OR resilien*[All Fields]) OR (Plant Roots/microbiology[MeSH] OR Plant Shoots/microbiology[MeSH]) NOT (drug tolerance[All Fields]))"
     ]   
