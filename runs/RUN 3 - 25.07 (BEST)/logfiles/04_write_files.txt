@@ -1,0 +1,14 @@
+-----------------------------------------
+    CORPUS CREATION INITIATED
+-----------------------------------------
+File PMCids_drought.txt exists. PMC IDs successfully retrieved.
+File PMCids_cold.txt exists. PMC IDs successfully retrieved.
+File PMCids_heat.txt exists. PMC IDs successfully retrieved.
+File PMCids_salt.txt exists. PMC IDs successfully retrieved.
+
+Corpus has been created at corpus_data/articles.
+Total amount of fetched articles: 851 (757 duplicates removed)
+-----------------------------------------
+RAW CORPUS CREATION PROCESS RUNTIME:  752.1 seconds
+
+AVERAGE FILE WRITING RUNTIME: 0.018093649144738596 seconds

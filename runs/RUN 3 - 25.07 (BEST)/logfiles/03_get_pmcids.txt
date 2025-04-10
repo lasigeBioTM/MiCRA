@@ -1,0 +1,11 @@
+-----------------------------------------
+RETRIEVING PMC IDs FOR EACH STRESS TYPE
+QUERY KEYWORDS: [stress type] + ((microb*[All Fields]) OR (microorganism[All Fields] OR (Microbiota[MeSH]) OR (Mycobiome[MeSH]) NOT (gut microbiome[All Fields]))) + ((plant stress[All Fields]) OR (plant abiotic stress[All Fields]) OR (Stress, Physiological[MeSH])) + ((toleran*[All Fields] OR resilien*[All Fields]) OR (Plant Roots/microbiology[MeSH] OR Plant Shoots/microbiology[MeSH]) NOT (drug tolerance[All Fields]))
+-----------------------------------------
+473 PMC IDs retrieved for drought stress.
+395 PMC IDs retrieved for salt stress.
+365 PMC IDs retrieved for cold stress.
+375 PMC IDs retrieved for heat stress.
+-----------------------------------------
+
+RUNTIME: 54.6 seconds

@@ -1,0 +1,8 @@
+Generating abbreviations...
+RUNTIME: 13.6 seconds
+
+Dataset is composed of 2682 entries.
+Of 1451 files checked, 1089 didn't produce any dataset entries.
+           Query relevance: 24.948311509303934 %
+Raw dataset has been created at /dataset
+RUNTIME: 142903.2 seconds

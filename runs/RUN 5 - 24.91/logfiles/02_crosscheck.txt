@@ -1,0 +1,15 @@
+
+DATASET vs EXTRACTED CLASSES CROSSCHECK
+
+% of dataset plants in extracted classes: 100.0
+% of dataset microorganisms in extracted classes: 100.0
+
+----------------------------
+
+Microorganisms not found:
+None
+
+Plants not found:
+None
+
+----------------------------

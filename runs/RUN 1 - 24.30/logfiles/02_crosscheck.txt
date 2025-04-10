@@ -1,0 +1,15 @@
+
+DATASET vs EXTRACTED CLASSES CROSSCHECK
+
+% of dataset plants in extracted classes: 100.0
+% of dataset microorganisms in extracted classes: 99.8
+
+----------------------------
+
+Microorganisms not found:
+Rhizoglomus irregularis
+
+Plants not found:
+None
+
+----------------------------

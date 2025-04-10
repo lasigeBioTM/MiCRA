@@ -1,0 +1,10 @@
+Generating abbreviations...
+RUNTIME: 10.6 seconds
+!!!!
+corpus_data/articles/drought/fulltexts/11301936 has been ELIMINATED from corpus
+!!!!
+Dataset is composed of 2585 entries.
+Of 1380 files checked, 1034 didn't produce any dataset entries.
+           Query relevance: 25.072463768115938 %
+Raw dataset has been created at /dataset
+RUNTIME: 126634.8 seconds
