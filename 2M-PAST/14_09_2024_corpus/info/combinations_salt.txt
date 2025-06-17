@@ -341,21 +341,12 @@ References:
 
 -------------------------------------
 
-Pseudomonas + Zea mays --> 4 occurrences
+Planococcus rifietoensis + Cicer arietinum --> 4 occurrences
 References:
- Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
- -REF- also reported that ACC-deaminase activity in halolerant bacterial genera of Arthrobacter, Bacillus, Brevibacterium, Gracilibacillus, Virgibacillus, Salinicoccus, and Pseudomonas, Exiguobacterium isolated from the rhizosphere and phytoplane of Suaeda fruticosa L. Forssk stimulated growth of maize under saline conditions.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6930159)
- It has been demonstrated that maize inoculated with Rhizobium or Pseudomonas increased selective ion uptake under salinity conditions.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8472176)
- Rhizobium and Pseudomonas lead to lack of Na+ accumulation in maize salinity affected -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8472176)
-
--------------------------------------
-
-Bacillus megaterium + Zea mays --> 4 occurrences
-References:
- For example, in Zea mays plants under saline stress inoculated with Bacillus megaterium, water conductivity was improved by the induction of ZmPIP1;1 and ZmPIP1;5 gene expression, which encode for aquaporins -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8781547)
- Analysis of the gene expression of Pantoea agglomerans and Zea mays roots infected with Bacillus megaterium showed that the PIP2 and ZmPIP1-1 genes were up-regulated under saline stress conditions, helping to increase the values of hydraulic conductance in inoculated plants -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7344409)
- The gene expression analysis of maize Zea mays roots inoculated with Bacillus megaterium and Pantoea agglomerans revealed that the upregulation of ZmPIP2 and ZmPIP1-1 resulted in increased water uptake under salt stress conditions -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9266936)
- Inoculation of Bacillus megaterium causes increased water conductance in maize grown under salt stress via increase in the expression of two plasma membrane aquaporin protein isoforms -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9919780)
+ Qurashi and Sabri -REF- demonstrated that the EPS-producing salt-tolerant plant growth-promoting rhizosphere strains, Planococcus rifietoensis RT4 and Halomonas variabilis HT1, could stabilize soil structure and promote soil aggregation under high salinity conditions, which had a positive effect on growth of chickpea plant.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
+ The two strains Planococcus rifietoensis RT4 and Heliophila variabilis HT1 produced increased EPS and biofilm formation under high salinity conditions which supported the growth of chickpea plant -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
+ -REF- showed that EPS producing ST-PGPR Halomonas variabilis HT1 and Planococcus rifietoensis RT4 improved chickpea growth and stabilization of soil structure and aggregation under salinity.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6930159)
+ Under salt stress, the inoculation of Halomonas variabilis HT1 and Planococcus rifietoensis RT4 on chickpea Cicer arietinum stabilized the soil structure and soil aggregates, which improved the chickpea growth -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9266936)
 
 -------------------------------------
 
@@ -365,6 +356,15 @@ References:
  Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
  NaCl-tolerant PGPR strains Pseudomonas fluorescence, Bacillus pumilus, and Exiguobacterium aurantiacum improved wheat salinity tolerance by modulating antioxidant defense systems -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9518148)
  Under saline conditions, IAA concentrations of 0.22–25.58 μg mL–1, which can be produced by Pseudomonas sp., Rhizobium sp., Enterobacter sp., Pantoea sp., Marinobacterium sp., Acinetobacter sp., and Sinorhizobium sp., were shown to influence germination and seedling growth in wheat -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8828500)
+
+-------------------------------------
+
+Pseudomonas + Zea mays --> 4 occurrences
+References:
+ Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
+ -REF- also reported that ACC-deaminase activity in halolerant bacterial genera of Arthrobacter, Bacillus, Brevibacterium, Gracilibacillus, Virgibacillus, Salinicoccus, and Pseudomonas, Exiguobacterium isolated from the rhizosphere and phytoplane of Suaeda fruticosa L. Forssk stimulated growth of maize under saline conditions.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6930159)
+ It has been demonstrated that maize inoculated with Rhizobium or Pseudomonas increased selective ion uptake under salinity conditions.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8472176)
+ Rhizobium and Pseudomonas lead to lack of Na+ accumulation in maize salinity affected -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8472176)
 
 -------------------------------------
 
@@ -386,20 +386,20 @@ References:
 
 -------------------------------------
 
-Planococcus rifietoensis + Cicer arietinum --> 4 occurrences
+Bacillus megaterium + Zea mays --> 4 occurrences
 References:
- Qurashi and Sabri -REF- demonstrated that the EPS-producing salt-tolerant plant growth-promoting rhizosphere strains, Planococcus rifietoensis RT4 and Halomonas variabilis HT1, could stabilize soil structure and promote soil aggregation under high salinity conditions, which had a positive effect on growth of chickpea plant.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
- The two strains Planococcus rifietoensis RT4 and Heliophila variabilis HT1 produced increased EPS and biofilm formation under high salinity conditions which supported the growth of chickpea plant -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
- -REF- showed that EPS producing ST-PGPR Halomonas variabilis HT1 and Planococcus rifietoensis RT4 improved chickpea growth and stabilization of soil structure and aggregation under salinity.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6930159)
- Under salt stress, the inoculation of Halomonas variabilis HT1 and Planococcus rifietoensis RT4 on chickpea Cicer arietinum stabilized the soil structure and soil aggregates, which improved the chickpea growth -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9266936)
+ For example, in Zea mays plants under saline stress inoculated with Bacillus megaterium, water conductivity was improved by the induction of ZmPIP1;1 and ZmPIP1;5 gene expression, which encode for aquaporins -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8781547)
+ Analysis of the gene expression of Pantoea agglomerans and Zea mays roots infected with Bacillus megaterium showed that the PIP2 and ZmPIP1-1 genes were up-regulated under saline stress conditions, helping to increase the values of hydraulic conductance in inoculated plants -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7344409)
+ The gene expression analysis of maize Zea mays roots inoculated with Bacillus megaterium and Pantoea agglomerans revealed that the upregulation of ZmPIP2 and ZmPIP1-1 resulted in increased water uptake under salt stress conditions -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9266936)
+ Inoculation of Bacillus megaterium causes increased water conductance in maize grown under salt stress via increase in the expression of two plasma membrane aquaporin protein isoforms -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9919780)
 
 -------------------------------------
 
-Planococcus rifietoensis + Triticum aestivum --> 3 occurrences
+Pseudomonas migulae + Solanum lycopersicum --> 3 occurrences
 References:
- -REF- found that Planococcus rifietoensis improves the salinity tolerance of Triticum aestivum and increased the yield weight of 100 grains from 5.7 to 12% in field experiments.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8781547)
- Planococcus rifietoensis, an alkaliphilic bacterium is reported to enhance growth and yield of wheat crop under salinity stress -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6930159)
- IAA-producing, salt-tolerant Planococcus rifietoensis, Brachybacterium, and Haererohalobacter enhance the growth and yields of wheat and peanut plants under salinity stress Shukla et al., -REF-; Desale et al., -REF-; Zhou et al., -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8226221)
+ Specifically, Pseudomonas migulae 8R6 can produce ACC deaminase and ameliorate salt stress in tomato -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10027718)
+ Similarly, endophytic Pseudomonas migulae 8R6 and Pseudomonas fluorescens YsS6, with ACC-deaminase promoted the growth of tomato plants under salt stress -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9818225)
+ -REF- In addition to promoting tomato plant development in the absence of stress conditions, the endophytes Phyllobacterium brassicacearum exhibit YsS6 and Pseudomonas migulae 8R6, both of which display ACC deaminase activity, and also caused biomass accumulation to be considerably colder, drier, and higher in chlorophyll and more blooms and shoots in tomato vegetation grown under treated under salt stress conditions.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10308577)
 
 -------------------------------------
 
@@ -411,11 +411,11 @@ References:
 
 -------------------------------------
 
-Pseudomonas migulae + Solanum lycopersicum --> 3 occurrences
+Pseudomonas + Glycine max --> 3 occurrences
 References:
- Specifically, Pseudomonas migulae 8R6 can produce ACC deaminase and ameliorate salt stress in tomato -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10027718)
- Similarly, endophytic Pseudomonas migulae 8R6 and Pseudomonas fluorescens YsS6, with ACC-deaminase promoted the growth of tomato plants under salt stress -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9818225)
- -REF- In addition to promoting tomato plant development in the absence of stress conditions, the endophytes Phyllobacterium brassicacearum exhibit YsS6 and Pseudomonas migulae 8R6, both of which display ACC deaminase activity, and also caused biomass accumulation to be considerably colder, drier, and higher in chlorophyll and more blooms and shoots in tomato vegetation grown under treated under salt stress conditions.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10308577)
+ Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
+ It has been observed that Bacillus, Pseudomonas, and Rhizobacteria mitigate the negative effects of salt stress in soybean -REF-; -REF-; -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10548211)
+ For soybean, Bacillus, Pseudomonas, and Rhizobacteria were reported to alleviate the harmful effects of salinity stress -REF-; -REF-; -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9152913)
 
 -------------------------------------
 
@@ -435,11 +435,11 @@ References:
 
 -------------------------------------
 
-Pseudomonas + Glycine max --> 3 occurrences
+Planococcus rifietoensis + Triticum aestivum --> 3 occurrences
 References:
- Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
- It has been observed that Bacillus, Pseudomonas, and Rhizobacteria mitigate the negative effects of salt stress in soybean -REF-; -REF-; -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10548211)
- For soybean, Bacillus, Pseudomonas, and Rhizobacteria were reported to alleviate the harmful effects of salinity stress -REF-; -REF-; -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9152913)
+ -REF- found that Planococcus rifietoensis improves the salinity tolerance of Triticum aestivum and increased the yield weight of 100 grains from 5.7 to 12% in field experiments.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8781547)
+ Planococcus rifietoensis, an alkaliphilic bacterium is reported to enhance growth and yield of wheat crop under salinity stress -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6930159)
+ IAA-producing, salt-tolerant Planococcus rifietoensis, Brachybacterium, and Haererohalobacter enhance the growth and yields of wheat and peanut plants under salinity stress Shukla et al., -REF-; Desale et al., -REF-; Zhou et al., -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8226221)
 
 -------------------------------------
 
@@ -559,24 +559,24 @@ References:
 
 -------------------------------------
 
-Pseudomonas + Cucumis sativus --> 2 occurrences
-References:
- Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
- The effect of the ACC deaminase produced by Pseudomonas strains on plants under stress conditions has been demonstrated in several plant species using reverse genetics approaches, especially in canola, cucumber, and tomato under salt stress, and in tomato under flooding stress -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10326438)
-
--------------------------------------
-
-Pseudomonas + Gossypium hirsutum --> 2 occurrences
-References:
- Pseudomonas induces drought tolerance in mung bean -REF- and salt tolerance in cotton plants -REF-.Bacillus improves drought stress tolerance in maize, promoting better oxidative and water balance -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7917748)
- Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
-
--------------------------------------
-
 Pseudomonas alcaliphila + Oryza sativa --> 2 occurrences
 References:
  However, there is little knowledges of how the Pseudomonas alcaliphila strain Ej2 help rice plants alleviate salt stress.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10027718)
  However, there is little knowledge of the biocontrol strain Pseudomonas alcaliphila Ej2 mechanisms aiding rice plants to reduce the adverse effects caused by salt stress.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10027718)
+
+-------------------------------------
+
+Pseudomonas + Peanut --> 2 occurrences
+References:
+ Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
+ The diazotrophic salt-tolerant bacterial strains of Klebsiella, Agrobacterium, Pseudomonas, and Ochrobactrum isolated from the roots of a halophytic plant, Arthrocnemum indicum showed salinity tolerance ranging from 4 to 8% NaCl, and improved the productivity of peanut in saline as well as in control conditions -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6930159)
+
+-------------------------------------
+
+Pseudomonas + Cucumis sativus --> 2 occurrences
+References:
+ Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
+ The effect of the ACC deaminase produced by Pseudomonas strains on plants under stress conditions has been demonstrated in several plant species using reverse genetics approaches, especially in canola, cucumber, and tomato under salt stress, and in tomato under flooding stress -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10326438)
 
 -------------------------------------
 
@@ -594,10 +594,10 @@ References:
 
 -------------------------------------
 
-Pseudomonas fluorescens + Cucumis sativus --> 2 occurrences
+Pseudomonas simiae + Glycine max --> 2 occurrences
 References:
- -REF- reported that rhizospheric bacterial species Variovorax paradoxus JN858091, Pseudomonas fluorescens JN858088, and B. megeterium JN858098 have potential PGP attributes such as siderophore production, phosphate solubilization, exopolysaccharides production, indole acetic acid production, and ACC deaminase activity under both saline and normal conditions that alleviate the negative impacts of salinity and enhance the nutrients uptake for plant growth in cucumber plants.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9309559)
- For example, inoculation of PGPMs, Pseudomonas fluorescens, and Bacillus subtilis enhanced proline accumulation in cucumber plants under salinity stress compared to non-inoculated plants -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11284086)
+ Finally, a research group identified a strain named Pseudomonas simiae AU that was able to improve soybean growth under salt stress through a mix of volatile compounds, which remain to be characterized -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10326438)
+ A similar observation was made in soybean plants grown under salt stress, where VOCs emitted by Pseudomonas simiae decreased Na+ concentrations and increased phosphorus and potassium -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10097229)
 
 -------------------------------------
 
@@ -615,10 +615,10 @@ References:
 
 -------------------------------------
 
-Pseudomonas + Peanut --> 2 occurrences
+Pseudomonas fluorescens + Cucumis sativus --> 2 occurrences
 References:
- Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
- The diazotrophic salt-tolerant bacterial strains of Klebsiella, Agrobacterium, Pseudomonas, and Ochrobactrum isolated from the roots of a halophytic plant, Arthrocnemum indicum showed salinity tolerance ranging from 4 to 8% NaCl, and improved the productivity of peanut in saline as well as in control conditions -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6930159)
+ -REF- reported that rhizospheric bacterial species Variovorax paradoxus JN858091, Pseudomonas fluorescens JN858088, and B. megeterium JN858098 have potential PGP attributes such as siderophore production, phosphate solubilization, exopolysaccharides production, indole acetic acid production, and ACC deaminase activity under both saline and normal conditions that alleviate the negative impacts of salinity and enhance the nutrients uptake for plant growth in cucumber plants.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9309559)
+ For example, inoculation of PGPMs, Pseudomonas fluorescens, and Bacillus subtilis enhanced proline accumulation in cucumber plants under salinity stress compared to non-inoculated plants -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11284086)
 
 -------------------------------------
 
@@ -643,10 +643,10 @@ References:
 
 -------------------------------------
 
-Pseudomonas simiae + Glycine max --> 2 occurrences
+Pseudomonas putida + Gossypium hirsutum --> 2 occurrences
 References:
- Finally, a research group identified a strain named Pseudomonas simiae AU that was able to improve soybean growth under salt stress through a mix of volatile compounds, which remain to be characterized -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10326438)
- A similar observation was made in soybean plants grown under salt stress, where VOCs emitted by Pseudomonas simiae decreased Na+ concentrations and increased phosphorus and potassium -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10097229)
+ Pseudomonas putida Rs-198 isolated from a cotton alkaline soil in Xinjiang mitigated osmotic stress in cotton seedlings, which led to an improved germination rate, healthy stands, and growth parameters -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9121094)
+ Under saline conditions, Pseudomonas putida modulated IAA synthesis in plant tissue and increased the growth parameters of cotton -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6930159)
 
 -------------------------------------
 
@@ -692,10 +692,10 @@ References:
 
 -------------------------------------
 
-Pseudomonas putida + Gossypium hirsutum --> 2 occurrences
+Pseudomonas + Gossypium hirsutum --> 2 occurrences
 References:
- Pseudomonas putida Rs-198 isolated from a cotton alkaline soil in Xinjiang mitigated osmotic stress in cotton seedlings, which led to an improved germination rate, healthy stands, and growth parameters -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9121094)
- Under saline conditions, Pseudomonas putida modulated IAA synthesis in plant tissue and increased the growth parameters of cotton -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6930159)
+ Pseudomonas induces drought tolerance in mung bean -REF- and salt tolerance in cotton plants -REF-.Bacillus improves drought stress tolerance in maize, promoting better oxidative and water balance -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7917748)
+ Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
 
 -------------------------------------
 
@@ -1991,13 +1991,13 @@ References:
 
 -------------------------------------
 
-Pseudomonas + Pisum sativum --> 1 occurrences
+Pseudomonas + Sunflower --> 1 occurrences
 References:
- A Pseudomonas strain strengthens the root apoplast barriers, countering the effects of high salinity in plants In two recent studies, a research group discovered that a Pseudomonas strain known as Pseudomonas mandelii IB-Ki14 was able to help wheat and pea better tolerate salt in the soil by increasing the deposition of suberin and lignin in xylem cell walls, suberin lamellae, and Casparian strips -REF-; -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10326438)
+ Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
 
 -------------------------------------
 
-Pseudomonas aeruginosa + Helianthus annuus --> 1 occurrences
+Pseudomonas aeruginosa + Sunflower --> 1 occurrences
 References:
  For example, SA from PGPB Pseudomonas aeruginosa PF23EPS+ promotes sunflower growth in salt soils infected with the plant pathogen Macrophomina phaseolina -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9736644)
 
@@ -2057,12 +2057,6 @@ References:
 
 -------------------------------------
 
-Pseudomonas + Helianthus annuus --> 1 occurrences
-References:
- Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
-
--------------------------------------
-
 Pseudomonas + Hordeum vulgare --> 1 occurrences
 References:
  Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
@@ -2087,9 +2081,15 @@ References:
 
 -------------------------------------
 
-Bacillus licheniformis + Solanum lycopersicum --> 1 occurrences
+Pseudomonas + Pisum sativum --> 1 occurrences
 References:
- The ACC deaminase-producing bacterium Bacillus licheniformis HSW-16 and an endophytic halotolerant Bacillus velezensis FMH2 were reported to confer salt stress tolerance in wheat and tomato plants, respectively -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9436562)
+ A Pseudomonas strain strengthens the root apoplast barriers, countering the effects of high salinity in plants In two recent studies, a research group discovered that a Pseudomonas strain known as Pseudomonas mandelii IB-Ki14 was able to help wheat and pea better tolerate salt in the soil by increasing the deposition of suberin and lignin in xylem cell walls, suberin lamellae, and Casparian strips -REF-; -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10326438)
+
+-------------------------------------
+
+Bacillus licheniformis + Sunflower --> 1 occurrences
+References:
+ Similar to our result it was reported in early studies that in marginalized agricultural systems, the rhizobacteria Bacillus licheniformis and Pseudomonas plecoglossicida support the growth of the sunflower plant under salt stress by promoting the expression of the antioxidant enzymes CAT, SOD, and GPX as well as the production of ACC deaminase ACCD and IAA -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10556533)
 
 -------------------------------------
 
@@ -2177,9 +2177,9 @@ References:
 
 -------------------------------------
 
-Bacillus licheniformis + Helianthus annuus --> 1 occurrences
+Bacillus licheniformis + Solanum lycopersicum --> 1 occurrences
 References:
- Similar to our result it was reported in early studies that in marginalized agricultural systems, the rhizobacteria Bacillus licheniformis and Pseudomonas plecoglossicida support the growth of the sunflower plant under salt stress by promoting the expression of the antioxidant enzymes CAT, SOD, and GPX as well as the production of ACC deaminase ACCD and IAA -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10556533)
+ The ACC deaminase-producing bacterium Bacillus licheniformis HSW-16 and an endophytic halotolerant Bacillus velezensis FMH2 were reported to confer salt stress tolerance in wheat and tomato plants, respectively -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9436562)
 
 -------------------------------------
 
@@ -2291,7 +2291,7 @@ References:
 
 -------------------------------------
 
-Pseudomonas plecoglossicida + Helianthus annuus --> 1 occurrences
+Pseudomonas plecoglossicida + Sunflower --> 1 occurrences
 References:
  Similar to our result it was reported in early studies that in marginalized agricultural systems, the rhizobacteria Bacillus licheniformis and Pseudomonas plecoglossicida support the growth of the sunflower plant under salt stress by promoting the expression of the antioxidant enzymes CAT, SOD, and GPX as well as the production of ACC deaminase ACCD and IAA -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10556533)
 

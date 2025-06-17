@@ -91,7 +91,7 @@ References:
 
 -------------------------------------
 
-Aspergillus japonicus + Helianthus annuus --> 1 occurrences
+Aspergillus japonicus + Sunflower --> 1 occurrences
 References:
  -REF- found that endophytic Aspergillus japonicus improved soybean and sunflower growth under heat-stressed conditions.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8533330)
 
@@ -115,7 +115,7 @@ References:
 
 -------------------------------------
 
-Amauroascus niger + Helianthus annuus --> 1 occurrences
+Amauroascus niger + Sunflower --> 1 occurrences
 References:
  Amauroascus niger enhanced heat tolerance of soybean and sunflower by control of ROS and peroxidative damage.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8072474)
 

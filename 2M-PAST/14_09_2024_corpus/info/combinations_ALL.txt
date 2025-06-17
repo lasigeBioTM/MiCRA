@@ -1007,14 +1007,6 @@ References:
 
 -------------------------------------
 
-Burkholderia phytofirmans + Drought + Zea mays --> 3 occurrences
-References:
- For example, inoculation of wheat and maize plants with Pantoea alhagi or Burkholderia phytofirmans improved plant growth, root length, and drought resistance -REF-; -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8760038)
- -REF- reported improved growth, water availability, as well as photosynthetic activity in maize cultivars under drought after inoculation of endophytic bacterial strains Burkholderia phytofirmans strain PsJN and Enterobacter sp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8398416)
- -REF- observed that Burkholderia phytofirmans PsJN increases maize biomass, leaf area, and RWC under drought stress while regulating cellular homeostasis and ROS detoxification at the transcription level -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10381829)
-
--------------------------------------
-
 Pseudomonas migulae + Salt + Solanum lycopersicum --> 3 occurrences
 References:
  Specifically, Pseudomonas migulae 8R6 can produce ACC deaminase and ameliorate salt stress in tomato -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10027718)
@@ -1028,6 +1020,14 @@ References:
  The alleviation of salt stress symptoms in Solanum lycopersicum matched with an increase in proline content after the inoculation of Enterobacter 64S1 and Pseudomonas 42P4 -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10255858)
  Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
  The effect of the ACC deaminase produced by Pseudomonas strains on plants under stress conditions has been demonstrated in several plant species using reverse genetics approaches, especially in canola, cucumber, and tomato under salt stress, and in tomato under flooding stress -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10326438)
+
+-------------------------------------
+
+Burkholderia phytofirmans + Drought + Zea mays --> 3 occurrences
+References:
+ For example, inoculation of wheat and maize plants with Pantoea alhagi or Burkholderia phytofirmans improved plant growth, root length, and drought resistance -REF-; -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8760038)
+ -REF- reported improved growth, water availability, as well as photosynthetic activity in maize cultivars under drought after inoculation of endophytic bacterial strains Burkholderia phytofirmans strain PsJN and Enterobacter sp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8398416)
+ -REF- observed that Burkholderia phytofirmans PsJN increases maize biomass, leaf area, and RWC under drought stress while regulating cellular homeostasis and ROS detoxification at the transcription level -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10381829)
 
 -------------------------------------
 
@@ -1185,10 +1185,10 @@ References:
 
 -------------------------------------
 
-Burkholderia phytofirmans psjn + Drought + Solanum tuberosum --> 2 occurrences
+Bacillus thuringiensis + Drought + Cicer arietinum --> 2 occurrences
 References:
- -REF- showed that inoculating potato plants with the beneficial bacteria Burkholderia phytofirmans PsJN straian changed DNA methylation patterns, resulting in drought resistance.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10671349)
- Transcriptome analysis of Burkholderia phytofirmans PsJN colonizing potato under drought stress showed the upregulation of genes related to transcriptional regulation, homeostasis, and the detoxification of ROS -REF-.The transcriptome analysis of plant growth-promoting Paenibacillus polymyxa YC0136 showed 286 genes were up-regulated and 223 genes were down-regulated under interaction with tobacco -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10149814)
+ Similarly, two drought-tolerant PGPR strains Bacillus cereus P2 and Planomicrobium chinense P1 reduced proline and malondialdehyde contents when inoculated to Helianthus annuus under water-stressed conditions -REF-, and decreases in proline and MDA contents in foliage were observed in water-stressed chickpea plants inoculated with three drought-tolerant PGPR strains, namely, Bacillus subtilis, Bacillus thuringiensis, and Bacillus megaterium -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8614786)
+ reported that theinoculation of Bacillus subtilis, Bacillus thuringiensis and Bacillus megaterium along with salicylic and putrescine under drought stress significantly reduced the APOX 70% and 68% and SOD 61% and 65% activities in both drought tolerant and sensitive varieties of chickpea -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11133442)
 
 -------------------------------------
 
@@ -1297,17 +1297,17 @@ References:
 
 -------------------------------------
 
+Burkholderia phytofirmans psjn + Drought + Solanum tuberosum --> 2 occurrences
+References:
+ -REF- showed that inoculating potato plants with the beneficial bacteria Burkholderia phytofirmans PsJN straian changed DNA methylation patterns, resulting in drought resistance.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10671349)
+ Transcriptome analysis of Burkholderia phytofirmans PsJN colonizing potato under drought stress showed the upregulation of genes related to transcriptional regulation, homeostasis, and the detoxification of ROS -REF-.The transcriptome analysis of plant growth-promoting Paenibacillus polymyxa YC0136 showed 286 genes were up-regulated and 223 genes were down-regulated under interaction with tobacco -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10149814)
+
+-------------------------------------
+
 Burkholderia phytofirmans psjn + Cold + Vitis vinifera --> 2 occurrences
 References:
  In other studies, Burkholderia phytofirmans PsJN could tolerate cold stress by inducing high concentration of total reducing sugars, glucose, and proline on bacterization of grapevine -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
  The same bacteria, Burkholderia phytofirmans PsJN, when inoculated with cold-stressed grapevine Vitis vinifera, lowered biomass reduction and electrolyte leakage from membranes -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9415082)
-
--------------------------------------
-
-Bacillus thuringiensis + Drought + Cicer arietinum --> 2 occurrences
-References:
- Similarly, two drought-tolerant PGPR strains Bacillus cereus P2 and Planomicrobium chinense P1 reduced proline and malondialdehyde contents when inoculated to Helianthus annuus under water-stressed conditions -REF-, and decreases in proline and MDA contents in foliage were observed in water-stressed chickpea plants inoculated with three drought-tolerant PGPR strains, namely, Bacillus subtilis, Bacillus thuringiensis, and Bacillus megaterium -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8614786)
- reported that theinoculation of Bacillus subtilis, Bacillus thuringiensis and Bacillus megaterium along with salicylic and putrescine under drought stress significantly reduced the APOX 70% and 68% and SOD 61% and 65% activities in both drought tolerant and sensitive varieties of chickpea -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11133442)
 
 -------------------------------------
 
@@ -1752,13 +1752,6 @@ References:
 
 -------------------------------------
 
-Pseudomonas + Salt + Peanut --> 2 occurrences
-References:
- Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
- The diazotrophic salt-tolerant bacterial strains of Klebsiella, Agrobacterium, Pseudomonas, and Ochrobactrum isolated from the roots of a halophytic plant, Arthrocnemum indicum showed salinity tolerance ranging from 4 to 8% NaCl, and improved the productivity of peanut in saline as well as in control conditions -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6930159)
-
--------------------------------------
-
 Pseudomonas alcaliphila + Salt + Oryza sativa --> 2 occurrences
 References:
  However, there is little knowledges of how the Pseudomonas alcaliphila strain Ej2 help rice plants alleviate salt stress.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10027718)
@@ -1770,6 +1763,13 @@ Pseudomonas + Salt + Gossypium hirsutum --> 2 occurrences
 References:
  Pseudomonas induces drought tolerance in mung bean -REF- and salt tolerance in cotton plants -REF-.Bacillus improves drought stress tolerance in maize, promoting better oxidative and water balance -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7917748)
  Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
+
+-------------------------------------
+
+Pseudomonas + Salt + Peanut --> 2 occurrences
+References:
+ Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
+ The diazotrophic salt-tolerant bacterial strains of Klebsiella, Agrobacterium, Pseudomonas, and Ochrobactrum isolated from the roots of a halophytic plant, Arthrocnemum indicum showed salinity tolerance ranging from 4 to 8% NaCl, and improved the productivity of peanut in saline as well as in control conditions -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6930159)
 
 -------------------------------------
 
@@ -1932,13 +1932,19 @@ References:
 
 -------------------------------------
 
+Pseudomonas aeruginosa + Drought + Maize --> 1 occurrences
+References:
+ Maize seedlings that were primed with three different EPS-producing strains – Pseudomonas aeruginosa Pa2, Proteus penneri Pp1, and Alcaligenes faecalis AF3 – demonstrated improvement in soil moisture, increase in plant biomass, root and shoot length, and surface area of leaves in maize plants under water deficit stress.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
+
+-------------------------------------
+
 Pseudomonas aeruginosa + Drought + Zea mays --> 1 occurrences
 References:
  -REF- found that inoculating maize seeds with EPS-producing bacterial strains Alcaligenes faecalis, Pseudomonas aeruginosa, and Proteus penneri increases soil moisture and relative water contents, shoot and root length, leaf area, and plant biomass under drought conditions.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11371581)
 
 -------------------------------------
 
-Pseudomonas aeruginosa + Salt + Helianthus annuus --> 1 occurrences
+Pseudomonas aeruginosa + Salt + Sunflower --> 1 occurrences
 References:
  For example, SA from PGPB Pseudomonas aeruginosa PF23EPS+ promotes sunflower growth in salt soils infected with the plant pathogen Macrophomina phaseolina -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9736644)
 
@@ -1947,12 +1953,6 @@ References:
 Pseudomonas anguilliseptica + Salt + Vicia faba --> 1 occurrences
 References:
  A previous study indicated that the formation of EPS and biofilms produced by the PGPR Pseudomonas anguilliseptica SAW 24 significantly improved the growth of Vicia faba L. under salt stress -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9121094)
-
--------------------------------------
-
-Pseudomonas + Salt + Helianthus annuus --> 1 occurrences
-References:
- Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
 
 -------------------------------------
 
@@ -1986,9 +1986,9 @@ References:
 
 -------------------------------------
 
-Pseudomonas aeruginosa + Drought + Maize --> 1 occurrences
+Pseudomonas + Salt + Sunflower --> 1 occurrences
 References:
- Maize seedlings that were primed with three different EPS-producing strains – Pseudomonas aeruginosa Pa2, Proteus penneri Pp1, and Alcaligenes faecalis AF3 – demonstrated improvement in soil moisture, increase in plant biomass, root and shoot length, and surface area of leaves in maize plants under water deficit stress.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706007)
+ Arabidopsis up to 200 mM NaCl -REF-, maize up to 150 mM NaCl -REF-, wheat up to 200 mM NaCl -REF-, cotton 0.35 % NaCl -REF-, cucumber 100 mM NaCl -REF-, peanut 100 mM NaCl -REF-, soybean 100 mM NaCl -REF-, -REF-, tomato up to 185 mM NaCl -REF-, sunflower EC up to 15.9 dS/m -REF-, oats and barley EC up to 9.4 dS/m -REF- have shown elevated growth under salt stress upon inoculation with Pseudomonas spp.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9712829)
 
 -------------------------------------
 
@@ -2238,7 +2238,7 @@ References:
 
 -------------------------------------
 
-Pseudomonas plecoglossicida + Salt + Helianthus annuus --> 1 occurrences
+Pseudomonas plecoglossicida + Salt + Sunflower --> 1 occurrences
 References:
  Similar to our result it was reported in early studies that in marginalized agricultural systems, the rhizobacteria Bacillus licheniformis and Pseudomonas plecoglossicida support the growth of the sunflower plant under salt stress by promoting the expression of the antioxidant enzymes CAT, SOD, and GPX as well as the production of ACC deaminase ACCD and IAA -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10556533)
 
@@ -2466,7 +2466,7 @@ References:
 
 -------------------------------------
 
-Azotobacter + Drought + Helianthus annuus --> 1 occurrences
+Azotobacter + Drought + Sunflower --> 1 occurrences
 References:
  -REF- noted an increase of resistance to water stress in sunflower plants treated with EPS produced by Azotobacter, probably due to their ability to improve soil structure in the rhizosphere.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7947814)
 
@@ -2850,7 +2850,7 @@ References:
 
 -------------------------------------
 
-Aspergillus japonicus + Heat + Helianthus annuus --> 1 occurrences
+Aspergillus japonicus + Heat + Sunflower --> 1 occurrences
 References:
  -REF- found that endophytic Aspergillus japonicus improved soybean and sunflower growth under heat-stressed conditions.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8533330)
 
@@ -3156,7 +3156,7 @@ References:
 
 -------------------------------------
 
-Amauroascus niger + Heat + Helianthus annuus --> 1 occurrences
+Amauroascus niger + Heat + Sunflower --> 1 occurrences
 References:
  Amauroascus niger enhanced heat tolerance of soybean and sunflower by control of ROS and peroxidative damage.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8072474)
 
@@ -4410,7 +4410,7 @@ References:
 
 -------------------------------------
 
-Acetobacter calcoaceticus + Drought + Arachis hypogaea --> 1 occurrences
+Acetobacter calcoaceticus + Drought + Arachis sylvestris --> 1 occurrences
 References:
  According to our data, elevated activities of the antioxidant enzymes CAT, APX, and SOD resulted in enhanced drought tolerance in groundnut, and Acetobacter calcoaceticus AC06 and B. amyloliquefaciens BA01 have been found to mediate more excellent drought resistance by manipulating the ROS-scavenging enzymes and can be exploited efficiently under hostile environments.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11094965)
 
@@ -4626,15 +4626,15 @@ References:
 
 -------------------------------------
 
-Bacillus licheniformis + Salt + Helianthus annuus --> 1 occurrences
-References:
- Similar to our result it was reported in early studies that in marginalized agricultural systems, the rhizobacteria Bacillus licheniformis and Pseudomonas plecoglossicida support the growth of the sunflower plant under salt stress by promoting the expression of the antioxidant enzymes CAT, SOD, and GPX as well as the production of ACC deaminase ACCD and IAA -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10556533)
-
--------------------------------------
-
 Bacillus licheniformis + Salt + Solanum lycopersicum --> 1 occurrences
 References:
  The ACC deaminase-producing bacterium Bacillus licheniformis HSW-16 and an endophytic halotolerant Bacillus velezensis FMH2 were reported to confer salt stress tolerance in wheat and tomato plants, respectively -REF-, -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9436562)
+
+-------------------------------------
+
+Bacillus licheniformis + Salt + Sunflower --> 1 occurrences
+References:
+ Similar to our result it was reported in early studies that in marginalized agricultural systems, the rhizobacteria Bacillus licheniformis and Pseudomonas plecoglossicida support the growth of the sunflower plant under salt stress by promoting the expression of the antioxidant enzymes CAT, SOD, and GPX as well as the production of ACC deaminase ACCD and IAA -REF-.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10556533)
 
 -------------------------------------
 

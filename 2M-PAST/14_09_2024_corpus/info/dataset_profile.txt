@@ -58,6 +58,6 @@ Pinus massoniana          42
 Cucumis sativus           39
 Medicago sativa           39
 Solanum tuberosum         28
-Vitis vinifera            25
 Pepper                    25
+Vitis vinifera            25
 Name: count, dtype: int64

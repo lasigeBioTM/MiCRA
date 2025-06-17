@@ -818,7 +818,7 @@ References:
 
 -------------------------------------
 
-Acetobacter calcoaceticus + Arachis hypogaea --> 1 occurrences
+Acetobacter calcoaceticus + Arachis sylvestris --> 1 occurrences
 References:
  According to our data, elevated activities of the antioxidant enzymes CAT, APX, and SOD resulted in enhanced drought tolerance in groundnut, and Acetobacter calcoaceticus AC06 and B. amyloliquefaciens BA01 have been found to mediate more excellent drought resistance by manipulating the ROS-scavenging enzymes and can be exploited efficiently under hostile environments.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11094965)
 
@@ -938,7 +938,7 @@ References:
 
 -------------------------------------
 
-Azotobacter + Helianthus annuus --> 1 occurrences
+Azotobacter + Sunflower --> 1 occurrences
 References:
  -REF- noted an increase of resistance to water stress in sunflower plants treated with EPS produced by Azotobacter, probably due to their ability to improve soil structure in the rhizosphere.  (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7947814)
 
